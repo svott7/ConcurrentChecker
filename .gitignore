@@ -1,0 +1,11 @@
+# Default ignored files
+.mps/shelf/
+.mps/workspace.xml
+**/classes_gen
+**/source_gen
+**/source_gen.caches
+
+.gitattributes
+
+build/
+build.xml
