@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mps.tweaks.modelchecker" uuid="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="mps.tweaks.concurrentchecker" uuid="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -51,7 +51,7 @@
     <module reference="8d29d73f-ed99-4652-ae0a-083cdfe53c34(jetbrains.mps.ide.platform)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
-    <module reference="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b(mps.tweaks.modelchecker)" version="0" />
+    <module reference="2e2cd1f8-3954-4f13-89cd-44fe9de53d0b(mps.tweaks.concurrentchecker)" version="0" />
     <module reference="cab969fd-26dd-44f3-8b9e-5b546649b200(mps.tweaks.smodel)" version="0" />
   </dependencyVersions>
 </solution>

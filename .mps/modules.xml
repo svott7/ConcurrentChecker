@@ -2,7 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.modelchecker/mps.tweaks.modelchecker.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.tweaks.concurrentchecker/mps.tweaks.concurrentchecker.msd" folder="" />
     </projectModules>
   </component>
 </project>
