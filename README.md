@@ -12,6 +12,12 @@ TBC Example
 
 - The checker can not be executed before generation or committing
 
+##### TODOs
+
+- [ ] lock editors and display warning
+- [ ] add checkers for modules
+- [ ] are models also checked concurrently?
+
 ### Usage
 
 TBC
@@ -19,11 +25,24 @@ TBC
 - 
 #### Measure execution time
 
+In order to compare concurrent and sequential model checkers you can activate time measurement executing the action "ToggleConcurrentCheckerLoggerState" via "Find Action...". The action is called "Set ConcurrentCheckerLogger active/inactive".
+
+The concurrent model checker also logs the execution time of each individual checker.
+
+Time measurements are printed in MPS message view.
+
+
 ##### Of the default, sequential MPS model checker
 
-The plugin provides the action "Check Model With Time Measuring" to measure the runtime of the default MPS model checker. The measurement is printed in MPS message view.
+The plugin provides the action "Check Model With Time Measuring" to measure the runtime of the default MPS model checker.
 
-Call the action using "Find Action..." (Ctrl+Shift+a) or assign a shortcut.
+Call the action using "Find Action...".
+
+### Editor locking
+
+To avoid UI freezing, editors are read-only while running the checkers. The user can look around but editor input event are ignored, otherwise the UI would freeze until checkers are finished.
+
+There is a helper action "MakeThisEditorReadonlyOrWritable" which accessible via "Find Action..." for test purposes. 
 
 ### Build instructions
 

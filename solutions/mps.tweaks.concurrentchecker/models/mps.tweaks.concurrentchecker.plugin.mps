@@ -59,6 +59,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="997079742910640235" name="fillActionContext" index="1teQrl" />
         <property id="1213273179528" name="description" index="1WHSii" />
         <child id="394857668356997869" name="places" index="med8o" />
@@ -6996,7 +6997,7 @@
               <property role="3oM_SC" value="lock" />
             </node>
             <node concept="3oM_SD" id="2S7XOoH9pgQ" role="1PaTwD">
-              <property role="3oM_SC" value="screen" />
+              <property role="3oM_SC" value="screenY" />
             </node>
           </node>
         </node>
@@ -8795,327 +8796,89 @@
     </node>
   </node>
   <node concept="2DaZZR" id="3ZFBIUSvim_" />
-  <node concept="sE7Ow" id="26PAZwtBK8g">
-    <property role="2uzpH1" value="Make ReadOnly" />
-    <property role="TrG5h" value="MakeReadOnly" />
+  <node concept="sE7Ow" id="26PAZwtCp1y">
+    <property role="2uzpH1" value="Make This Editor Readonly or Writable" />
+    <property role="TrG5h" value="MakeThisEditorReadonlyOrWritable" />
     <property role="3GE5qa" value="editor-component-support" />
-    <node concept="1DS2jV" id="26PAZwtC8qj" role="1NuT2Z">
-      <property role="TrG5h" value="component" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
+    <node concept="1DS2jV" id="26PAZwtCp1z" role="1NuT2Z">
+      <property role="TrG5h" value="editorComponent" />
       <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
-      <node concept="1oajcY" id="26PAZwtC8qk" role="1oa70y" />
+      <node concept="1oajcY" id="26PAZwtCp1$" role="1oa70y" />
     </node>
-    <node concept="tnohg" id="26PAZwtBK8h" role="tncku">
-      <node concept="3clFbS" id="26PAZwtBK8i" role="2VODD2">
-        <node concept="2xdQw9" id="26PAZwtx4w1" role="3cqZAp">
-          <node concept="3cpWs3" id="26PAZwtx4w2" role="9lYJi">
-            <node concept="Xl_RD" id="26PAZwtx4w3" role="3uHU7w">
-              <property role="Xl_RC" value=" start" />
-            </node>
-            <node concept="2OqwBi" id="26PAZwtx4w4" role="3uHU7B">
-              <node concept="2OqwBi" id="26PAZwtx4w5" role="2Oq$k0">
-                <node concept="2WthIp" id="26PAZwtx4w6" role="2Oq$k0" />
-                <node concept="1DTwFV" id="26PAZwtx4w7" role="2OqNvi">
-                  <ref role="2WH_rO" node="26PAZwtC8qj" resolve="component" />
-                </node>
-              </node>
-              <node concept="liA8E" id="26PAZwtx4w8" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
+    <node concept="tnohg" id="26PAZwtCp1_" role="tncku">
+      <node concept="3clFbS" id="26PAZwtCp1A" role="2VODD2">
+        <node concept="3clFbF" id="3w1r$vxAVB4" role="3cqZAp">
+          <node concept="2YIFZM" id="3w1r$vxAVSD" role="3clFbG">
+            <ref role="37wK5l" node="3w1r$vx_Oar" resolve="setReadonlyField" />
+            <ref role="1Pybhc" node="3w1r$vx_ED6" resolve="EditorComponentReadonlySupport" />
+            <node concept="2OqwBi" id="3w1r$vxAW9d" role="37wK5m">
+              <node concept="2WthIp" id="3w1r$vxAVTS" role="2Oq$k0" />
+              <node concept="1DTwFV" id="3w1r$vxAWBF" role="2OqNvi">
+                <ref role="2WH_rO" node="26PAZwtCp1z" resolve="editorComponent" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="26PAZwtCMV1" role="3cqZAp" />
-        <node concept="3J1_TO" id="26PAZwtrXRq" role="3cqZAp">
-          <node concept="3uVAMA" id="26PAZwtsfSJ" role="1zxBo5">
-            <node concept="XOnhg" id="26PAZwtsfSK" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="26PAZwtsfSL" role="1tU5fm">
-                <node concept="3uibUv" id="26PAZwtsjVH" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~NoSuchFieldException" resolve="NoSuchFieldException" />
-                </node>
-                <node concept="3uibUv" id="26PAZwtskSZ" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="26PAZwtsfSM" role="1zc67A">
-              <node concept="2xdQw9" id="26PAZwtzoYi" role="3cqZAp">
-                <property role="2xdLsb" value="gZ5fh_4/error" />
-                <node concept="3cpWs3" id="26PAZwtzppZ" role="9lYJi">
-                  <node concept="2OqwBi" id="26PAZwtzpL8" role="3uHU7w">
-                    <node concept="37vLTw" id="26PAZwtzpqQ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="26PAZwtsfSK" resolve="e" />
-                    </node>
-                    <node concept="liA8E" id="26PAZwtzqJs" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs3" id="26PAZwt$gXl" role="3uHU7B">
-                    <node concept="Xl_RD" id="26PAZwt$ilL" role="3uHU7w">
-                      <property role="Xl_RC" value=" " />
-                    </node>
-                    <node concept="3cpWs3" id="26PAZwt$dRx" role="3uHU7B">
-                      <node concept="Xl_RD" id="26PAZwtzoYk" role="3uHU7B">
-                        <property role="Xl_RC" value="EXC " />
-                      </node>
-                      <node concept="2OqwBi" id="26PAZwt$ehn" role="3uHU7w">
-                        <node concept="37vLTw" id="26PAZwt$dY5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="26PAZwtsfSK" resolve="e" />
-                        </node>
-                        <node concept="liA8E" id="26PAZwt$fpi" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                        </node>
-                      </node>
-                    </node>
+            <node concept="3fqX7Q" id="3w1r$vxAWOH" role="37wK5m">
+              <node concept="2OqwBi" id="3w1r$vxAWPG" role="3fr31v">
+                <node concept="2OqwBi" id="3w1r$vxAWPH" role="2Oq$k0">
+                  <node concept="2WthIp" id="3w1r$vxAWPI" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3w1r$vxAWPJ" role="2OqNvi">
+                    <ref role="2WH_rO" node="26PAZwtCp1z" resolve="editorComponent" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="26PAZwtrXRs" role="1zxBo7">
-            <node concept="3cpWs8" id="26PAZwtqyTY" role="3cqZAp">
-              <node concept="3cpWsn" id="26PAZwtqyTZ" role="3cpWs9">
-                <property role="TrG5h" value="readOnlyField" />
-                <node concept="3uibUv" id="26PAZwtqyU0" role="1tU5fm">
-                  <ref role="3uigEE" to="t6h5:~Field" resolve="Field" />
+                <node concept="liA8E" id="3w1r$vxAWPK" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
                 </node>
-                <node concept="2OqwBi" id="26PAZwtqMFK" role="33vP2m">
-                  <node concept="2OqwBi" id="26PAZwt$_sH" role="2Oq$k0">
-                    <node concept="2OqwBi" id="26PAZwtqD95" role="2Oq$k0">
-                      <node concept="2OqwBi" id="26PAZwtqBke" role="2Oq$k0">
-                        <node concept="2WthIp" id="26PAZwtqB1O" role="2Oq$k0" />
-                        <node concept="1DTwFV" id="26PAZwtqC9i" role="2OqNvi">
-                          <ref role="2WH_rO" node="26PAZwtC8qj" resolve="component" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="26PAZwtqLXY" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="26PAZwt$G62" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getSuperclass()" resolve="getSuperclass" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="26PAZwtqSoO" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String)" resolve="getDeclaredField" />
-                    <node concept="Xl_RD" id="26PAZwtr0uB" role="37wK5m">
-                      <property role="Xl_RC" value="myReadOnly" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="26PAZwtrcOS" role="3cqZAp">
-              <node concept="2OqwBi" id="26PAZwtrfhV" role="3clFbG">
-                <node concept="37vLTw" id="26PAZwtrcOQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="26PAZwtqyTZ" resolve="readOnlyField" />
-                </node>
-                <node concept="liA8E" id="26PAZwtrkG7" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Field.setAccessible(boolean)" resolve="setAccessible" />
-                  <node concept="3clFbT" id="26PAZwtrkHA" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="26PAZwtrpI_" role="3cqZAp">
-              <node concept="2OqwBi" id="26PAZwtrsj0" role="3clFbG">
-                <node concept="37vLTw" id="26PAZwtrpIz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="26PAZwtqyTZ" resolve="readOnlyField" />
-                </node>
-                <node concept="liA8E" id="26PAZwtrBWr" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Field.setBoolean(java.lang.Object,boolean)" resolve="setBoolean" />
-                  <node concept="2OqwBi" id="26PAZwtrCkd" role="37wK5m">
-                    <node concept="2WthIp" id="26PAZwtrBZg" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="26PAZwtrD7B" role="2OqNvi">
-                      <ref role="2WH_rO" node="26PAZwtC8qj" resolve="component" />
-                    </node>
-                  </node>
-                  <node concept="3clFbT" id="26PAZwtrIzZ" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2xdQw9" id="26PAZwtwenv" role="3cqZAp">
-          <node concept="3cpWs3" id="26PAZwtwH1z" role="9lYJi">
-            <node concept="Xl_RD" id="26PAZwtwKYM" role="3uHU7w">
-              <property role="Xl_RC" value=" end" />
-            </node>
-            <node concept="2OqwBi" id="26PAZwtwyYq" role="3uHU7B">
-              <node concept="2OqwBi" id="26PAZwtwqG2" role="2Oq$k0">
-                <node concept="2WthIp" id="26PAZwtwoeZ" role="2Oq$k0" />
-                <node concept="1DTwFV" id="26PAZwtww5l" role="2OqNvi">
-                  <ref role="2WH_rO" node="26PAZwtC8qj" resolve="component" />
-                </node>
-              </node>
-              <node concept="liA8E" id="26PAZwtwCIz" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
-  </node>
-  <node concept="sE7Ow" id="26PAZwtCp1y">
-    <property role="2uzpH1" value="Make Writable" />
-    <property role="TrG5h" value="MakeWritable" />
-    <property role="3GE5qa" value="editor-component-support" />
-    <node concept="1DS2jV" id="26PAZwtCp1z" role="1NuT2Z">
-      <property role="TrG5h" value="component" />
-      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
-      <node concept="1oajcY" id="26PAZwtCp1$" role="1oa70y" />
-    </node>
-    <node concept="tnohg" id="26PAZwtCp1_" role="tncku">
-      <node concept="3clFbS" id="26PAZwtCp1A" role="2VODD2">
-        <node concept="2xdQw9" id="26PAZwtCp1B" role="3cqZAp">
-          <node concept="3cpWs3" id="26PAZwtCp1C" role="9lYJi">
-            <node concept="Xl_RD" id="26PAZwtCp1D" role="3uHU7w">
-              <property role="Xl_RC" value=" start" />
-            </node>
-            <node concept="2OqwBi" id="26PAZwtCp1E" role="3uHU7B">
-              <node concept="2OqwBi" id="26PAZwtCp1F" role="2Oq$k0">
-                <node concept="2WthIp" id="26PAZwtCp1G" role="2Oq$k0" />
-                <node concept="1DTwFV" id="26PAZwtCp1H" role="2OqNvi">
-                  <ref role="2WH_rO" node="26PAZwtCp1z" resolve="component" />
-                </node>
+    <node concept="tkhdA" id="3w1r$vxARuz" role="tmbBb">
+      <node concept="3clFbS" id="3w1r$vxARu$" role="2VODD2">
+        <node concept="3cpWs8" id="3w1r$vxATCF" role="3cqZAp">
+          <node concept="3KEzu6" id="3w1r$vxATCC" role="3cpWs9">
+            <property role="TrG5h" value="targetState" />
+            <node concept="PeGgZ" id="3w1r$vxATCD" role="1tU5fm" />
+            <node concept="3K4zz7" id="3w1r$vxATZS" role="33vP2m">
+              <node concept="Xl_RD" id="3w1r$vxAU7S" role="3K4E3e">
+                <property role="Xl_RC" value="Writable" />
               </node>
-              <node concept="liA8E" id="26PAZwtCp1I" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
+              <node concept="Xl_RD" id="3w1r$vxAUhl" role="3K4GZi">
+                <property role="Xl_RC" value="Read-Only" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="26PAZwtCp1J" role="3cqZAp" />
-        <node concept="3J1_TO" id="26PAZwtCp1K" role="3cqZAp">
-          <node concept="3uVAMA" id="26PAZwtCp1L" role="1zxBo5">
-            <node concept="XOnhg" id="26PAZwtCp1M" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="26PAZwtCp1N" role="1tU5fm">
-                <node concept="3uibUv" id="26PAZwtCp1O" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~NoSuchFieldException" resolve="NoSuchFieldException" />
-                </node>
-                <node concept="3uibUv" id="26PAZwtCp1P" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="26PAZwtCp1Q" role="1zc67A">
-              <node concept="2xdQw9" id="26PAZwtCp1R" role="3cqZAp">
-                <property role="2xdLsb" value="gZ5fh_4/error" />
-                <node concept="3cpWs3" id="26PAZwtCp1S" role="9lYJi">
-                  <node concept="2OqwBi" id="26PAZwtCp1T" role="3uHU7w">
-                    <node concept="37vLTw" id="26PAZwtCp1U" role="2Oq$k0">
-                      <ref role="3cqZAo" node="26PAZwtCp1M" resolve="e" />
-                    </node>
-                    <node concept="liA8E" id="26PAZwtCp1V" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs3" id="26PAZwtCp1W" role="3uHU7B">
-                    <node concept="Xl_RD" id="26PAZwtCp1X" role="3uHU7w">
-                      <property role="Xl_RC" value=" " />
-                    </node>
-                    <node concept="3cpWs3" id="26PAZwtCp1Y" role="3uHU7B">
-                      <node concept="Xl_RD" id="26PAZwtCp1Z" role="3uHU7B">
-                        <property role="Xl_RC" value="EXC " />
-                      </node>
-                      <node concept="2OqwBi" id="26PAZwtCp20" role="3uHU7w">
-                        <node concept="37vLTw" id="26PAZwtCp21" role="2Oq$k0">
-                          <ref role="3cqZAo" node="26PAZwtCp1M" resolve="e" />
-                        </node>
-                        <node concept="liA8E" id="26PAZwtCp22" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                        </node>
-                      </node>
-                    </node>
+              <node concept="2OqwBi" id="3w1r$vxATGI" role="3K4Cdx">
+                <node concept="2OqwBi" id="3w1r$vxATGJ" role="2Oq$k0">
+                  <node concept="2WthIp" id="3w1r$vxATGK" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3w1r$vxATGL" role="2OqNvi">
+                    <ref role="2WH_rO" node="26PAZwtCp1z" resolve="editorComponent" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="26PAZwtCp23" role="1zxBo7">
-            <node concept="3cpWs8" id="26PAZwtCp24" role="3cqZAp">
-              <node concept="3cpWsn" id="26PAZwtCp25" role="3cpWs9">
-                <property role="TrG5h" value="readOnlyField" />
-                <node concept="3uibUv" id="26PAZwtCp26" role="1tU5fm">
-                  <ref role="3uigEE" to="t6h5:~Field" resolve="Field" />
-                </node>
-                <node concept="2OqwBi" id="26PAZwtCp27" role="33vP2m">
-                  <node concept="2OqwBi" id="26PAZwtCp28" role="2Oq$k0">
-                    <node concept="2OqwBi" id="26PAZwtCp29" role="2Oq$k0">
-                      <node concept="2OqwBi" id="26PAZwtCp2a" role="2Oq$k0">
-                        <node concept="2WthIp" id="26PAZwtCp2b" role="2Oq$k0" />
-                        <node concept="1DTwFV" id="26PAZwtCp2c" role="2OqNvi">
-                          <ref role="2WH_rO" node="26PAZwtCp1z" resolve="component" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="26PAZwtCp2d" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="26PAZwtCp2e" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getSuperclass()" resolve="getSuperclass" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="26PAZwtCp2f" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String)" resolve="getDeclaredField" />
-                    <node concept="Xl_RD" id="26PAZwtCp2g" role="37wK5m">
-                      <property role="Xl_RC" value="myReadOnly" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="26PAZwtCp2h" role="3cqZAp">
-              <node concept="2OqwBi" id="26PAZwtCp2i" role="3clFbG">
-                <node concept="37vLTw" id="26PAZwtCp2j" role="2Oq$k0">
-                  <ref role="3cqZAo" node="26PAZwtCp25" resolve="readOnlyField" />
-                </node>
-                <node concept="liA8E" id="26PAZwtCp2k" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Field.setAccessible(boolean)" resolve="setAccessible" />
-                  <node concept="3clFbT" id="26PAZwtCp2l" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="26PAZwtCp2m" role="3cqZAp">
-              <node concept="2OqwBi" id="26PAZwtCp2n" role="3clFbG">
-                <node concept="37vLTw" id="26PAZwtCp2o" role="2Oq$k0">
-                  <ref role="3cqZAo" node="26PAZwtCp25" resolve="readOnlyField" />
-                </node>
-                <node concept="liA8E" id="26PAZwtCp2p" role="2OqNvi">
-                  <ref role="37wK5l" to="t6h5:~Field.setBoolean(java.lang.Object,boolean)" resolve="setBoolean" />
-                  <node concept="2OqwBi" id="26PAZwtCp2q" role="37wK5m">
-                    <node concept="2WthIp" id="26PAZwtCp2r" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="26PAZwtCp2s" role="2OqNvi">
-                      <ref role="2WH_rO" node="26PAZwtCp1z" resolve="component" />
-                    </node>
-                  </node>
-                  <node concept="3clFbT" id="26PAZwtCp2t" role="37wK5m" />
+                <node concept="liA8E" id="3w1r$vxATGM" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="26PAZwtCp2u" role="3cqZAp">
-          <node concept="3cpWs3" id="26PAZwtCp2v" role="9lYJi">
-            <node concept="Xl_RD" id="26PAZwtCp2w" role="3uHU7w">
-              <property role="Xl_RC" value=" end" />
-            </node>
-            <node concept="2OqwBi" id="26PAZwtCp2x" role="3uHU7B">
-              <node concept="2OqwBi" id="26PAZwtCp2y" role="2Oq$k0">
-                <node concept="2WthIp" id="26PAZwtCp2z" role="2Oq$k0" />
-                <node concept="1DTwFV" id="26PAZwtCp2$" role="2OqNvi">
-                  <ref role="2WH_rO" node="26PAZwtCp1z" resolve="component" />
-                </node>
+        <node concept="3clFbF" id="3w1r$vxARQq" role="3cqZAp">
+          <node concept="2OqwBi" id="3w1r$vxASl2" role="3clFbG">
+            <node concept="2OqwBi" id="3w1r$vxARZl" role="2Oq$k0">
+              <node concept="tl45R" id="3w1r$vxARQp" role="2Oq$k0" />
+              <node concept="liA8E" id="3w1r$vxAShX" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
               </node>
-              <node concept="liA8E" id="26PAZwtCp2_" role="2OqNvi">
-                <ref role="37wK5l" to="exr9:~EditorComponent.isReadOnly()" resolve="isReadOnly" />
+            </node>
+            <node concept="liA8E" id="3w1r$vxASK8" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setText(java.lang.String)" resolve="setText" />
+              <node concept="3cpWs3" id="3w1r$vxATgu" role="37wK5m">
+                <node concept="37vLTw" id="3w1r$vxAU$g" role="3uHU7w">
+                  <ref role="3cqZAo" node="3w1r$vxATCC" resolve="targetState" />
+                </node>
+                <node concept="Xl_RD" id="3w1r$vxASLn" role="3uHU7B">
+                  <property role="Xl_RC" value="Make This Editor " />
+                </node>
               </node>
             </node>
           </node>
@@ -9325,6 +9088,199 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="3w1r$vx_ED6">
+    <property role="3GE5qa" value="editor-component-support" />
+    <property role="TrG5h" value="EditorComponentReadonlySupport" />
+    <node concept="Wx3nA" id="3w1r$vx_I01" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="EDITOR_COMPONENT__READ_ONLY_FIELD" />
+      <node concept="3Tm6S6" id="3w1r$vx_HZY" role="1B3o_S" />
+      <node concept="17QB3L" id="3w1r$vx_HZZ" role="1tU5fm" />
+      <node concept="Xl_RD" id="3w1r$vx_I00" role="33vP2m">
+        <property role="Xl_RC" value="myReadOnly" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3w1r$vx_IY2" role="jymVt" />
+    <node concept="2YIFZL" id="3w1r$vx_EEI" role="jymVt">
+      <property role="TrG5h" value="setReadonly" />
+      <node concept="3Tm1VV" id="3w1r$vx_EEJ" role="1B3o_S" />
+      <node concept="3cqZAl" id="3w1r$vx_EEK" role="3clF45" />
+      <node concept="3clFbS" id="3w1r$vx_EEL" role="3clF47">
+        <node concept="3clFbF" id="3w1r$vxAaBf" role="3cqZAp">
+          <node concept="1rXfSq" id="3w1r$vxAaBe" role="3clFbG">
+            <ref role="37wK5l" node="3w1r$vx_Oar" resolve="setReadonlyState" />
+            <node concept="37vLTw" id="3w1r$vxAaC2" role="37wK5m">
+              <ref role="3cqZAo" node="3w1r$vx_Gc5" resolve="editorComponent" />
+            </node>
+            <node concept="3clFbT" id="3w1r$vxAaKF" role="37wK5m">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3w1r$vx_Gc5" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="3w1r$vx_Gc4" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3w1r$vxAhI_" role="jymVt" />
+    <node concept="2YIFZL" id="3w1r$vxAhbP" role="jymVt">
+      <property role="TrG5h" value="setWritable" />
+      <node concept="3Tm1VV" id="3w1r$vxAhbQ" role="1B3o_S" />
+      <node concept="3cqZAl" id="3w1r$vxAhbR" role="3clF45" />
+      <node concept="3clFbS" id="3w1r$vxAhbS" role="3clF47">
+        <node concept="3clFbF" id="3w1r$vxAhbT" role="3cqZAp">
+          <node concept="1rXfSq" id="3w1r$vxAhbU" role="3clFbG">
+            <ref role="37wK5l" node="3w1r$vx_Oar" resolve="setReadonlyState" />
+            <node concept="37vLTw" id="3w1r$vxAhbV" role="37wK5m">
+              <ref role="3cqZAo" node="3w1r$vxAhbX" resolve="editorComponent" />
+            </node>
+            <node concept="3clFbT" id="3w1r$vxAhbW" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3w1r$vxAhbX" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="3w1r$vxAhbY" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3w1r$vx_O9s" role="jymVt" />
+    <node concept="2YIFZL" id="3w1r$vx_Oar" role="jymVt">
+      <property role="TrG5h" value="setReadonlyField" />
+      <node concept="3Tm1VV" id="3w1r$vx_Oas" role="1B3o_S" />
+      <node concept="3cqZAl" id="3w1r$vx_Oat" role="3clF45" />
+      <node concept="3clFbS" id="3w1r$vx_Oau" role="3clF47">
+        <node concept="3J1_TO" id="26PAZwtrXRq" role="3cqZAp">
+          <node concept="3uVAMA" id="26PAZwtsfSJ" role="1zxBo5">
+            <node concept="XOnhg" id="26PAZwtsfSK" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="26PAZwtsfSL" role="1tU5fm">
+                <node concept="3uibUv" id="26PAZwtsjVH" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~NoSuchFieldException" resolve="NoSuchFieldException" />
+                </node>
+                <node concept="3uibUv" id="26PAZwtskSZ" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~IllegalAccessException" resolve="IllegalAccessException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="26PAZwtsfSM" role="1zc67A">
+              <node concept="YS8fn" id="3w1r$vx_Sjv" role="3cqZAp">
+                <node concept="2ShNRf" id="3w1r$vx_Sks" role="YScLw">
+                  <node concept="1pGfFk" id="3w1r$vxA7oQ" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                    <node concept="3cpWs3" id="26PAZwtzppZ" role="37wK5m">
+                      <node concept="2OqwBi" id="26PAZwtzpL8" role="3uHU7w">
+                        <node concept="37vLTw" id="26PAZwtzpqQ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="26PAZwtsfSK" resolve="e" />
+                        </node>
+                        <node concept="liA8E" id="26PAZwtzqJs" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs3" id="26PAZwt$gXl" role="3uHU7B">
+                        <node concept="Xl_RD" id="26PAZwt$ilL" role="3uHU7w">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                        <node concept="3cpWs3" id="26PAZwt$dRx" role="3uHU7B">
+                          <node concept="Xl_RD" id="26PAZwtzoYk" role="3uHU7B">
+                            <property role="Xl_RC" value="EXC " />
+                          </node>
+                          <node concept="2OqwBi" id="26PAZwt$ehn" role="3uHU7w">
+                            <node concept="37vLTw" id="26PAZwt$dY5" role="2Oq$k0">
+                              <ref role="3cqZAo" node="26PAZwtsfSK" resolve="e" />
+                            </node>
+                            <node concept="liA8E" id="26PAZwt$fpi" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="26PAZwtrXRs" role="1zxBo7">
+            <node concept="3cpWs8" id="26PAZwtqyTY" role="3cqZAp">
+              <node concept="3cpWsn" id="26PAZwtqyTZ" role="3cpWs9">
+                <property role="TrG5h" value="readOnlyField" />
+                <node concept="3uibUv" id="26PAZwtqyU0" role="1tU5fm">
+                  <ref role="3uigEE" to="t6h5:~Field" resolve="Field" />
+                </node>
+                <node concept="2OqwBi" id="26PAZwtqMFK" role="33vP2m">
+                  <node concept="2OqwBi" id="26PAZwt$_sH" role="2Oq$k0">
+                    <node concept="liA8E" id="26PAZwt$G62" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getSuperclass()" resolve="getSuperclass" />
+                    </node>
+                    <node concept="2OqwBi" id="3w1r$vxAcVv" role="2Oq$k0">
+                      <node concept="37vLTw" id="3w1r$vxAbvh" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3w1r$vx_Oyb" resolve="editorComponent" />
+                      </node>
+                      <node concept="liA8E" id="3w1r$vxAfvF" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="26PAZwtqSoO" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getDeclaredField(java.lang.String)" resolve="getDeclaredField" />
+                    <node concept="37vLTw" id="3w1r$vx_OyH" role="37wK5m">
+                      <ref role="3cqZAo" node="3w1r$vx_I01" resolve="EDITOR_COMPONENT__READ_ONLY_FIELD" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="26PAZwtrcOS" role="3cqZAp">
+              <node concept="2OqwBi" id="26PAZwtrfhV" role="3clFbG">
+                <node concept="37vLTw" id="26PAZwtrcOQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="26PAZwtqyTZ" resolve="readOnlyField" />
+                </node>
+                <node concept="liA8E" id="26PAZwtrkG7" role="2OqNvi">
+                  <ref role="37wK5l" to="t6h5:~Field.setAccessible(boolean)" resolve="setAccessible" />
+                  <node concept="3clFbT" id="26PAZwtrkHA" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="26PAZwtrpI_" role="3cqZAp">
+              <node concept="2OqwBi" id="26PAZwtrsj0" role="3clFbG">
+                <node concept="37vLTw" id="26PAZwtrpIz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="26PAZwtqyTZ" resolve="readOnlyField" />
+                </node>
+                <node concept="liA8E" id="26PAZwtrBWr" role="2OqNvi">
+                  <ref role="37wK5l" to="t6h5:~Field.setBoolean(java.lang.Object,boolean)" resolve="setBoolean" />
+                  <node concept="37vLTw" id="3w1r$vxAc79" role="37wK5m">
+                    <ref role="3cqZAo" node="3w1r$vx_Oyb" resolve="editorComponent" />
+                  </node>
+                  <node concept="37vLTw" id="3w1r$vx_RiE" role="37wK5m">
+                    <ref role="3cqZAo" node="3w1r$vx_P8d" resolve="state" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3w1r$vx_Oyb" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="3w1r$vx_Oya" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3w1r$vx_P8d" role="3clF46">
+        <property role="TrG5h" value="state" />
+        <node concept="10P_77" id="3w1r$vx_PP$" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="3w1r$vx_ED7" role="1B3o_S" />
   </node>
 </model>
 
