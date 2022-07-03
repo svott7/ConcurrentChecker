@@ -400,6 +400,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
         <property id="779128492853934523" name="cellId" index="1K8rM7" />
       </concept>
@@ -414,6 +418,7 @@
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539781" name="url" index="1X82VU" />
       </concept>
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
@@ -9250,6 +9255,29 @@
     </node>
     <node concept="tkhdA" id="3w1r$vxzhXa" role="tmbBb">
       <node concept="3clFbS" id="3w1r$vxzhXb" role="2VODD2">
+        <node concept="3SKdUt" id="3w1r$vx$NTJ" role="3cqZAp">
+          <node concept="1PaTwC" id="3w1r$vx$NTK" role="1aUNEU">
+            <node concept="3oM_SD" id="3w1r$vx$O6T" role="1PaTwD">
+              <property role="3oM_SC" value="warning" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vx$O74" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vx$O7a" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vx$O7h" role="1PaTwD">
+              <property role="3oM_SC" value="MPS" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vx$O7q" role="1PaTwD">
+              <property role="3oM_SC" value="issue:" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vx$O7L" role="1PaTwD">
+              <property role="3oM_SC" value="https://youtrack.jetbrains.com/issue/MPS-34612" />
+              <property role="1X82VU" value="https://youtrack.jetbrains.com/issue/MPS-34612" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3w1r$vxzk6U" role="3cqZAp">
           <node concept="3KEzu6" id="3w1r$vxzk6R" role="3cpWs9">
             <property role="TrG5h" value="stateText" />
@@ -9266,6 +9294,10 @@
                 <ref role="1PxDUh" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="3w1r$vx$O7V" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;" />
+            <property role="huDt6" value="all typesystem messages" />
           </node>
         </node>
         <node concept="3clFbF" id="3w1r$vxzieI" role="3cqZAp">
