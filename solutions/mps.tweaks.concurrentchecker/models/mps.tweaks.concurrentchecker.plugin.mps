@@ -812,12 +812,12 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="2S7XOoGiHiR" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2xdQw9" id="2S7XOoEdmC7" role="8Wnug">
-            <property role="2xdLsb" value="gZ5frni/trace" />
-            <node concept="3cpWs3" id="2S7XOoEfjBP" role="9lYJi">
+        <node concept="3clFbH" id="3w1r$vxvjNm" role="3cqZAp" />
+        <node concept="3clFbF" id="3w1r$vxvm0r" role="3cqZAp">
+          <node concept="2YIFZM" id="3w1r$vxvnGx" role="3clFbG">
+            <ref role="37wK5l" node="3w1r$vxp1Z_" resolve="infoIfActive" />
+            <ref role="1Pybhc" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
+            <node concept="3cpWs3" id="2S7XOoEfjBP" role="37wK5m">
               <node concept="3cpWs3" id="2S7XOoEdmCb" role="3uHU7B">
                 <node concept="1eOMI4" id="2S7XOoEfjBL" role="3uHU7B">
                   <node concept="3cpWsd" id="2S7XOoEfjBM" role="1eOMHV">
@@ -831,7 +831,7 @@
                   </node>
                 </node>
                 <node concept="Xl_RD" id="2S7XOoEfjBQ" role="3uHU7w">
-                  <property role="Xl_RC" value=" of " />
+                  <property role="Xl_RC" value=" ms took " />
                 </node>
               </node>
               <node concept="1rXfSq" id="2S7XOoFAthE" role="3uHU7w">
@@ -1960,12 +1960,15 @@
                   </node>
                 </node>
               </node>
-              <node concept="2xdQw9" id="2S7XOoFxnO9" role="3cqZAp">
-                <node concept="3cpWs3" id="2S7XOoFxwVd" role="9lYJi">
-                  <node concept="Xl_RD" id="2S7XOoFxnOb" role="3uHU7B">
-                    <property role="Xl_RC" value="DONE " />
+              <node concept="3clFbH" id="3w1r$vxwIVw" role="3cqZAp" />
+              <node concept="3clFbF" id="3w1r$vxwM_6" role="3cqZAp">
+                <node concept="2YIFZM" id="3w1r$vxwPvg" role="3clFbG">
+                  <ref role="37wK5l" node="3w1r$vxp1Z_" resolve="infoIfActive" />
+                  <ref role="1Pybhc" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
+                  <node concept="Xl_RD" id="3w1r$vxwRfw" role="37wK5m">
+                    <property role="Xl_RC" value="Concurrent Model Check took %sms" />
                   </node>
-                  <node concept="1eOMI4" id="2S7XOoFxMip" role="3uHU7w">
+                  <node concept="1eOMI4" id="2S7XOoFxMip" role="37wK5m">
                     <node concept="3cpWsd" id="2S7XOoFx_ox" role="1eOMHV">
                       <node concept="2YIFZM" id="2S7XOoEbG1Z" role="3uHU7B">
                         <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
@@ -6613,8 +6616,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="2S7XOoDJl8q">
-    <property role="2uzpH1" value="Check Models Multithreaded" />
-    <property role="TrG5h" value="CheckModelsMultithreaded" />
+    <property role="2uzpH1" value="Check Models Concurrenly" />
+    <property role="TrG5h" value="CheckModelsConcurrenly" />
     <property role="3GE5qa" value="" />
     <node concept="2XrIbr" id="2S7XOoDKlFZ" role="32lrUH">
       <property role="TrG5h" value="selectedModels" />
@@ -7363,7 +7366,7 @@
               <ref role="37wK5l" to="qkt:~Presentation.setText(java.lang.String)" resolve="setText" />
               <node concept="3cpWs3" id="2S7XOoDK8iM" role="37wK5m">
                 <node concept="Xl_RD" id="2S7XOoDK8iN" role="3uHU7w">
-                  <property role="Xl_RC" value=" multi-threaded" />
+                  <property role="Xl_RC" value=" Concurrently" />
                 </node>
                 <node concept="3cpWs3" id="2S7XOoDK8iO" role="3uHU7B">
                   <node concept="Xl_RD" id="2S7XOoDK8iP" role="3uHU7B">
@@ -8084,8 +8087,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="2S7XOoH8xd6">
-    <property role="TrG5h" value="CheckModulesMultithreaded" />
-    <property role="2uzpH1" value="Check Modules Multithreaded" />
+    <property role="TrG5h" value="CheckModulesConcurrently" />
+    <property role="2uzpH1" value="Check Modules Concurrently" />
     <property role="3GE5qa" value="" />
     <node concept="2XrIbr" id="3pNk_u$34RM" role="32lrUH">
       <property role="TrG5h" value="modules2check" />
@@ -8240,6 +8243,9 @@
           <node concept="1PaTwC" id="2S7XOoH9nqi" role="1aUNEU">
             <node concept="3oM_SD" id="2S7XOoH9nsv" role="1PaTwD">
               <property role="3oM_SC" value="todo" />
+            </node>
+            <node concept="3oM_SD" id="3w1r$vxzgVX" role="1PaTwD">
+              <property role="3oM_SC" value="impl" />
             </node>
           </node>
         </node>
@@ -8754,7 +8760,7 @@
     </node>
   </node>
   <node concept="tC5Ba" id="26PAZwt2TvR">
-    <property role="TrG5h" value="MultiThreadedCheckModel" />
+    <property role="TrG5h" value="ConcurrentModelCheckerGroup" />
     <property role="3GE5qa" value="" />
     <node concept="tT9cl" id="26PAZwt2Twb" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
@@ -8768,7 +8774,7 @@
   </node>
   <node concept="tC5Ba" id="2S7XOoH8xd4">
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="MultiThreadedCheckModules" />
+    <property role="TrG5h" value="ConcurrentModuleCheckerGroup" />
     <node concept="tT9cl" id="1gEYwydCrTA" role="2f5YQi">
       <ref role="2f8Tey" to="tprs:miYJQAr2Uo" resolve="check" />
       <ref role="tU$_T" to="tprs:miYJQAr2Uj" resolve="CommonModuleActions" />
@@ -9119,7 +9125,7 @@
       <property role="TrG5h" value="isActive" />
       <node concept="3Tm1VV" id="3w1r$vxp0DV" role="1B3o_S" />
       <node concept="10P_77" id="3w1r$vxp1jt" role="1tU5fm" />
-      <node concept="3clFbT" id="3w1r$vxp1ld" role="33vP2m" />
+      <node concept="3clFbT" id="3w1r$vxvkva" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="3w1r$vxp1lx" role="jymVt" />
     <node concept="2YIFZL" id="3w1r$vxoWhH" role="jymVt">
@@ -9236,6 +9242,51 @@
               <node concept="10M0yZ" id="3w1r$vxpceu" role="3fr31v">
                 <ref role="3cqZAo" node="3w1r$vxp1jC" resolve="isActive" />
                 <ref role="1PxDUh" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="tkhdA" id="3w1r$vxzhXa" role="tmbBb">
+      <node concept="3clFbS" id="3w1r$vxzhXb" role="2VODD2">
+        <node concept="3cpWs8" id="3w1r$vxzk6U" role="3cqZAp">
+          <node concept="3KEzu6" id="3w1r$vxzk6R" role="3cpWs9">
+            <property role="TrG5h" value="stateText" />
+            <node concept="PeGgZ" id="3w1r$vxzk6S" role="1tU5fm" />
+            <node concept="3K4zz7" id="3w1r$vxzksN" role="33vP2m">
+              <node concept="Xl_RD" id="3w1r$vxzktM" role="3K4E3e">
+                <property role="Xl_RC" value="inactive" />
+              </node>
+              <node concept="Xl_RD" id="3w1r$vxzkvi" role="3K4GZi">
+                <property role="Xl_RC" value="active" />
+              </node>
+              <node concept="10M0yZ" id="3w1r$vxzkdo" role="3K4Cdx">
+                <ref role="3cqZAo" node="3w1r$vxp1jC" resolve="isActive" />
+                <ref role="1PxDUh" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3w1r$vxzieI" role="3cqZAp">
+          <node concept="2OqwBi" id="3w1r$vxziWr" role="3clFbG">
+            <node concept="2OqwBi" id="3w1r$vxzin_" role="2Oq$k0">
+              <node concept="tl45R" id="3w1r$vxzieH" role="2Oq$k0" />
+              <node concept="liA8E" id="3w1r$vxziPk" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~AnActionEvent.getPresentation()" resolve="getPresentation" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3w1r$vxzjd_" role="2OqNvi">
+              <ref role="37wK5l" to="qkt:~Presentation.setText(java.lang.String)" resolve="setText" />
+              <node concept="2YIFZM" id="3w1r$vxzjQ2" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" />
+                <ref role="1Pybhc" to="wyt6:~String" />
+                <node concept="Xl_RD" id="3w1r$vxzjQ3" role="37wK5m">
+                  <property role="Xl_RC" value="Set ConcurrentCheckerLogger %s" />
+                </node>
+                <node concept="37vLTw" id="3w1r$vxzkIZ" role="37wK5m">
+                  <ref role="3cqZAo" node="3w1r$vxzk6R" resolve="stateText" />
+                </node>
               </node>
             </node>
           </node>
