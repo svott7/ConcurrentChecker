@@ -19,6 +19,12 @@ TBC
 - 
 #### Measure execution time
 
+##### Of the default, sequential MPS model checker
+
+The plugin provides the action "Check Model With Time Measuring" to measure the runtime of the default MPS model checker. The measurement is printed in MPS message view.
+
+Call the action using "Find Action..." (Ctrl+Shift+a) or assign a shortcut.
+
 ### Build instructions
 
 TBC
