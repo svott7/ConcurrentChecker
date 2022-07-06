@@ -17,6 +17,7 @@ TBC Example
 - [ ] lock editors and display warning
 - [ ] add checkers for modules
 - [ ] are models also checked concurrently?
+- [ ] only check models with changes
 
 ### Usage
 
