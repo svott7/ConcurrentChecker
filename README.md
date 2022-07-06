@@ -27,7 +27,7 @@ TBC
 
 In order to compare concurrent and sequential model checkers you can activate time measurement executing the action "ToggleConcurrentCheckerLoggerState" via "Find Action...". The action is called "Set ConcurrentCheckerLogger active/inactive".
 
-The concurrent model checker also logs the execution time of each individual checker.
+The concurrent model checker also logs the execution time of each individual checker but the time is not the duration the task occupied the processor, unfortunately. It seems that IDEA starts the execution of all background tasks almost immediately.  
 
 Time measurements are printed in MPS message view.
 

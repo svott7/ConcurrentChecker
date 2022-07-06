@@ -158,7 +158,7 @@
       </node>
       <node concept="3_J27D" id="7DP0GxftJi0" role="m$_w8">
         <node concept="3Mxwew" id="7DP0GxftPzj" role="3MwsjC">
-          <property role="3MwjfP" value="0.01" />
+          <property role="3MwjfP" value="0.02" />
         </node>
       </node>
       <node concept="m$f5U" id="7DP0GxftJi2" role="m$_yh">
