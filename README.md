@@ -18,6 +18,8 @@ TBC Example
 - [ ] add checkers for modules
 - [ ] are models also checked concurrently?
 - [ ] only check models with changes
+- [ ] allow more than on post process checker
+- [ ] allow rerun
 
 ### Usage
 

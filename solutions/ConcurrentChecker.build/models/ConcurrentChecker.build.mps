@@ -242,6 +242,7 @@
         </node>
         <node concept="1SiIV0" id="7DP0GxftJiu" role="3bR37C">
           <node concept="3bR9La" id="7DP0GxftJiv" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
