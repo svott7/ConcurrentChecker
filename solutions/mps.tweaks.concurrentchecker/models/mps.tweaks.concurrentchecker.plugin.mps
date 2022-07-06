@@ -1879,6 +1879,45 @@
         <ref role="3uigEE" node="2S7XOoGQVeE" resolve="MyModelCheckerTool" />
       </node>
     </node>
+    <node concept="2tJIrI" id="47DS8_WICG7" role="jymVt" />
+    <node concept="2YIFZL" id="47DS8_WI_FR" role="jymVt">
+      <property role="TrG5h" value="createForProject" />
+      <node concept="37vLTG" id="47DS8_WI_FS" role="3clF46">
+        <property role="TrG5h" value="ideaProject" />
+        <node concept="3uibUv" id="47DS8_WI_FT" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="47DS8_WI_FX" role="3clF47">
+        <node concept="3cpWs6" id="47DS8_WI_G6" role="3cqZAp">
+          <node concept="2ShNRf" id="47DS8_WI_G7" role="3cqZAk">
+            <node concept="1pGfFk" id="47DS8_WI_G8" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" node="47DS8_WtqX5" resolve="MyModelCheckerTool" />
+              <node concept="37vLTw" id="47DS8_WI_G9" role="37wK5m">
+                <ref role="3cqZAo" node="47DS8_WI_FS" resolve="ideaProject" />
+              </node>
+              <node concept="2OqwBi" id="47DS8_WIIuh" role="37wK5m">
+                <node concept="37vLTw" id="47DS8_WIIcG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="47DS8_WI_FS" resolve="ideaProject" />
+                </node>
+                <node concept="liA8E" id="47DS8_WIIZK" role="2OqNvi">
+                  <ref role="37wK5l" to="4nm9:~Project.getName()" resolve="getName" />
+                </node>
+              </node>
+              <node concept="10M0yZ" id="47DS8_WIJ_3" role="37wK5m">
+                <ref role="3cqZAo" to="xnls:~IdeIcons.PROJECT_ICON" resolve="PROJECT_ICON" />
+                <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="47DS8_WI_Gy" role="1B3o_S" />
+      <node concept="3uibUv" id="47DS8_WI_Gz" role="3clF45">
+        <ref role="3uigEE" node="2S7XOoGQVeE" resolve="MyModelCheckerTool" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2S7XOoGQVgw" role="jymVt" />
     <node concept="3clFb_" id="47DS8_WtK3t" role="jymVt">
       <property role="TrG5h" value="displayResults" />
@@ -5859,7 +5898,7 @@
   </node>
   <node concept="tC5Ba" id="26PAZwt2TvR">
     <property role="TrG5h" value="ConcurrentModelCheckGroup" />
-    <property role="3GE5qa" value="groups" />
+    <property role="3GE5qa" value="action-groups" />
     <node concept="tT9cl" id="26PAZwt2Twb" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Hgq" resolve="ModelActions" />
       <ref role="2f8Tey" to="tprs:1gEYwydCqUZ" resolve="check" />
@@ -5898,7 +5937,7 @@
     </node>
   </node>
   <node concept="tC5Ba" id="2S7XOoH8xd4">
-    <property role="3GE5qa" value="groups" />
+    <property role="3GE5qa" value="action-groups" />
     <property role="TrG5h" value="ConcurrentModuleCheckGroup" />
     <node concept="tT9cl" id="1gEYwydCrTA" role="2f5YQi">
       <ref role="2f8Tey" to="tprs:miYJQAr2Uo" resolve="check" />
@@ -7492,6 +7531,658 @@
     <node concept="3Tm1VV" id="47DS8_WkPC8" role="1B3o_S" />
     <node concept="3uibUv" id="47DS8_WkPF$" role="1zkMxy">
       <ref role="3uigEE" node="2S7XOoFd072" resolve="CheckerTask" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="47DS8_WGr_v">
+    <property role="2uzpH1" value="Check Project Concurrently" />
+    <property role="TrG5h" value="CheckProjectConcurrently" />
+    <node concept="1DS2jV" id="1gEYwydCrUT" role="1NuT2Z">
+      <property role="TrG5h" value="ideaProject" />
+      <ref role="1DUlNI" to="qkt:~CommonDataKeys.PROJECT" resolve="PROJECT" />
+      <node concept="1oajcY" id="7HZe2EwZDpa" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="47DS8_WGCpm" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="47DS8_WGCpn" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="47DS8_WGr_w" role="tncku">
+      <node concept="3clFbS" id="47DS8_WGr_x" role="2VODD2">
+        <node concept="3cpWs8" id="47DS8_WGHt5" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHt6" role="3cpWs9">
+            <property role="TrG5h" value="actionStartTime" />
+            <node concept="2YIFZM" id="47DS8_WGHt7" role="33vP2m">
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis()" resolve="currentTimeMillis" />
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHt8" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHt9" role="3cqZAp" />
+        <node concept="3cpWs8" id="47DS8_WGHta" role="3cqZAp">
+          <node concept="3cpWsn" id="47DS8_WGHtb" role="3cpWs9">
+            <property role="TrG5h" value="modulesToCheck" />
+            <node concept="_YKpA" id="47DS8_WGHtf" role="1tU5fm">
+              <node concept="3uibUv" id="47DS8_WGHtg" role="_ZDj9">
+                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="47DS8_WGPeB" role="33vP2m">
+              <node concept="2OqwBi" id="47DS8_WGPeC" role="2Oq$k0">
+                <node concept="2WthIp" id="47DS8_WGPeD" role="2Oq$k0" />
+                <node concept="1DTwFV" id="47DS8_WGPeE" role="2OqNvi">
+                  <ref role="2WH_rO" node="47DS8_WGCpm" resolve="mpsProject" />
+                </node>
+              </node>
+              <node concept="liA8E" id="47DS8_WGPeF" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~ProjectBase.getProjectModules()" resolve="getProjectModules" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGV_S" role="3cqZAp" />
+        <node concept="3SKdUt" id="47DS8_WGX93" role="3cqZAp">
+          <node concept="1PaTwC" id="47DS8_WGX94" role="1aUNEU">
+            <node concept="3oM_SD" id="47DS8_WGYuK" role="1PaTwD">
+              <property role="3oM_SC" value="***" />
+            </node>
+            <node concept="3oM_SD" id="47DS8_WGYuT" role="1PaTwD">
+              <property role="3oM_SC" value="copied" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGVE7" role="3cqZAp" />
+        <node concept="2xdQw9" id="47DS8_WGHth" role="3cqZAp">
+          <node concept="3cpWs3" id="47DS8_WGHti" role="9lYJi">
+            <node concept="Xl_RD" id="47DS8_WGHtj" role="3uHU7B">
+              <property role="Xl_RC" value="modulesToCheck: " />
+            </node>
+            <node concept="37vLTw" id="47DS8_WGHtk" role="3uHU7w">
+              <ref role="3cqZAo" node="47DS8_WGHtb" resolve="modulesToCheck" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="47DS8_WGHtl" role="3cqZAp">
+          <node concept="2OqwBi" id="47DS8_WGHtm" role="3clFbw">
+            <node concept="37vLTw" id="47DS8_WGHtn" role="2Oq$k0">
+              <ref role="3cqZAo" node="47DS8_WGHtb" resolve="modulesToCheck" />
+            </node>
+            <node concept="1v1jN8" id="47DS8_WGHto" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="47DS8_WGHtp" role="3clFbx">
+            <node concept="3cpWs6" id="47DS8_WGHtq" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHtr" role="3cqZAp" />
+        <node concept="3cpWs8" id="47DS8_WGHts" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHtt" role="3cpWs9">
+            <property role="TrG5h" value="mpsModelExtractor" />
+            <node concept="2OqwBi" id="47DS8_WGHtu" role="33vP2m">
+              <node concept="2ShNRf" id="47DS8_WGHtv" role="2Oq$k0">
+                <node concept="HV5vD" id="47DS8_WGHtw" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="HV5vE" to="wsw7:7X3$Ctw7ww1" resolve="ModelsExtractorImpl" />
+                </node>
+              </node>
+              <node concept="liA8E" id="47DS8_WGHtx" role="2OqNvi">
+                <ref role="37wK5l" to="wsw7:34euvBSCGJN" resolve="includeStubs" />
+                <node concept="2OqwBi" id="47DS8_WGHty" role="37wK5m">
+                  <node concept="2YIFZM" id="47DS8_WGHtz" role="2Oq$k0">
+                    <ref role="37wK5l" to="phxh:3etVqSRKzvb" resolve="getInstance" />
+                    <ref role="1Pybhc" to="phxh:3etVqSRKzpg" resolve="ModelCheckerSettings" />
+                  </node>
+                  <node concept="liA8E" id="47DS8_WGHt$" role="2OqNvi">
+                    <ref role="37wK5l" to="phxh:1VtEqfXHNfQ" resolve="isCheckStubs" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHt_" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47DS8_WGHtA" role="3cqZAp">
+          <node concept="3cpWsn" id="47DS8_WGHtB" role="3cpWs9">
+            <property role="TrG5h" value="modelsToCheck" />
+            <node concept="_YKpA" id="47DS8_WGHtC" role="1tU5fm">
+              <node concept="3uibUv" id="47DS8_WGHtD" role="_ZDj9">
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="47DS8_WGHtE" role="33vP2m">
+              <node concept="2OqwBi" id="47DS8_WGHtF" role="2Oq$k0">
+                <node concept="37vLTw" id="47DS8_WGHtG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="47DS8_WGHtb" resolve="modulesToCheck" />
+                </node>
+                <node concept="3goQfb" id="47DS8_WGHtH" role="2OqNvi">
+                  <node concept="1bVj0M" id="47DS8_WGHtI" role="23t8la">
+                    <node concept="3clFbS" id="47DS8_WGHtJ" role="1bW5cS">
+                      <node concept="3clFbF" id="47DS8_WGHtK" role="3cqZAp">
+                        <node concept="2OqwBi" id="47DS8_WGHtL" role="3clFbG">
+                          <node concept="37vLTw" id="47DS8_WGHtM" role="2Oq$k0">
+                            <ref role="3cqZAo" node="47DS8_WGHtt" resolve="mpsModelExtractor" />
+                          </node>
+                          <node concept="liA8E" id="47DS8_WGHtN" role="2OqNvi">
+                            <ref role="37wK5l" to="wsw7:6bXa3O$azS7" resolve="getModels" />
+                            <node concept="37vLTw" id="47DS8_WGHtO" role="37wK5m">
+                              <ref role="3cqZAo" node="47DS8_WGHtP" resolve="it" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="47DS8_WGHtP" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="47DS8_WGHtQ" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="47DS8_WGHtR" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="2xdQw9" id="47DS8_WGHtS" role="3cqZAp">
+          <node concept="3cpWs3" id="47DS8_WGHtT" role="9lYJi">
+            <node concept="Xl_RD" id="47DS8_WGHtU" role="3uHU7B">
+              <property role="Xl_RC" value="modelsToCheck: " />
+            </node>
+            <node concept="37vLTw" id="47DS8_WGHtV" role="3uHU7w">
+              <ref role="3cqZAo" node="47DS8_WGHtB" resolve="modelsToCheck" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHtW" role="3cqZAp" />
+        <node concept="3clFbH" id="47DS8_WGHtX" role="3cqZAp" />
+        <node concept="3cpWs8" id="47DS8_WGHtY" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHtZ" role="3cpWs9">
+            <property role="TrG5h" value="mpsModulesCheckers" />
+            <node concept="2YIFZM" id="47DS8_WGHu0" role="33vP2m">
+              <ref role="1Pybhc" node="2S7XOoGLl5C" resolve="ModelCheckers" />
+              <ref role="37wK5l" node="2S7XOoGMyZE" resolve="getModuleCheckers" />
+              <node concept="2OqwBi" id="47DS8_WGHu1" role="37wK5m">
+                <node concept="2WthIp" id="47DS8_WGHu2" role="2Oq$k0" />
+                <node concept="1DTwFV" id="47DS8_WGHu3" role="2OqNvi">
+                  <ref role="2WH_rO" node="47DS8_WGCpm" resolve="mpsProject" />
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHu4" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="2xdQw9" id="47DS8_WGHu5" role="3cqZAp">
+          <node concept="3cpWs3" id="47DS8_WGHu6" role="9lYJi">
+            <node concept="Xl_RD" id="47DS8_WGHu7" role="3uHU7B">
+              <property role="Xl_RC" value="mpsModulesCheckers: " />
+            </node>
+            <node concept="37vLTw" id="47DS8_WGHu8" role="3uHU7w">
+              <ref role="3cqZAo" node="47DS8_WGHtZ" resolve="mpsModulesCheckers" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47DS8_WGHu9" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHua" role="3cpWs9">
+            <property role="TrG5h" value="mpsModelCheckers" />
+            <node concept="PeGgZ" id="47DS8_WGHub" role="1tU5fm" />
+            <node concept="2YIFZM" id="47DS8_WGHuc" role="33vP2m">
+              <ref role="37wK5l" node="2S7XOoGMn3f" resolve="getModelCheckers" />
+              <ref role="1Pybhc" node="2S7XOoGLl5C" resolve="ModelCheckers" />
+              <node concept="2OqwBi" id="47DS8_WGHud" role="37wK5m">
+                <node concept="2WthIp" id="47DS8_WGHue" role="2Oq$k0" />
+                <node concept="1DTwFV" id="47DS8_WGHuf" role="2OqNvi">
+                  <ref role="2WH_rO" node="47DS8_WGCpm" resolve="mpsProject" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47DS8_WGHug" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHuh" role="3cpWs9">
+            <property role="TrG5h" value="mpsPostProcessChecker" />
+            <node concept="2YIFZM" id="47DS8_WGHui" role="33vP2m">
+              <ref role="37wK5l" node="2S7XOoGLlS6" resolve="getPostProcessingChecker" />
+              <ref role="1Pybhc" node="2S7XOoGLl5C" resolve="ModelCheckers" />
+              <node concept="2OqwBi" id="47DS8_WGHuj" role="37wK5m">
+                <node concept="2WthIp" id="47DS8_WGHuk" role="2Oq$k0" />
+                <node concept="1DTwFV" id="47DS8_WGHul" role="2OqNvi">
+                  <ref role="2WH_rO" node="47DS8_WGCpm" resolve="mpsProject" />
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHum" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHun" role="3cqZAp" />
+        <node concept="3cpWs8" id="47DS8_WGHuo" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHup" role="3cpWs9">
+            <property role="TrG5h" value="finishedCheckers" />
+            <node concept="10QFUN" id="47DS8_WGHuq" role="33vP2m">
+              <node concept="2YIFZM" id="47DS8_WGHur" role="10QFUP">
+                <ref role="37wK5l" to="33ny:~Collections.synchronizedList(java.util.List)" resolve="synchronizedList" />
+                <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+                <node concept="2ShNRf" id="47DS8_WGHus" role="37wK5m">
+                  <node concept="Tc6Ow" id="47DS8_WGHut" role="2ShVmc">
+                    <node concept="3uibUv" id="47DS8_WGHuu" role="HW$YZ">
+                      <ref role="3uigEE" node="2S7XOoFd072" resolve="CheckerTask" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="_YKpA" id="47DS8_WGHuv" role="10QFUM">
+                <node concept="3uibUv" id="47DS8_WGHuw" role="_ZDj9">
+                  <ref role="3uigEE" node="2S7XOoFd072" resolve="CheckerTask" />
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHux" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="47DS8_WGHuy" role="3cqZAp">
+          <node concept="3KEzu6" id="47DS8_WGHuz" role="3cpWs9">
+            <property role="TrG5h" value="errorCollector" />
+            <node concept="2ShNRf" id="47DS8_WGHu$" role="33vP2m">
+              <node concept="1pGfFk" id="47DS8_WGHu_" role="2ShVmc">
+                <ref role="37wK5l" to="18ew:~CollectConsumer.&lt;init&gt;()" resolve="CollectConsumer" />
+                <node concept="3uibUv" id="47DS8_WGHuA" role="1pMfVU">
+                  <ref role="3uigEE" to="d6hs:~IssueKindReportItem" resolve="IssueKindReportItem" />
+                </node>
+              </node>
+            </node>
+            <node concept="PeGgZ" id="47DS8_WGHuB" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHuC" role="3cqZAp" />
+        <node concept="3cpWs8" id="47DS8_WGHuD" role="3cqZAp">
+          <node concept="3cpWsn" id="47DS8_WGHuE" role="3cpWs9">
+            <property role="TrG5h" value="onCheckerFinished" />
+            <node concept="1ajhzC" id="47DS8_WGHuF" role="1tU5fm">
+              <node concept="3uibUv" id="47DS8_WGHuG" role="1ajw0F">
+                <ref role="3uigEE" node="2S7XOoFd072" resolve="CheckerTask" />
+              </node>
+              <node concept="3cqZAl" id="47DS8_WGHuH" role="1ajl9A" />
+            </node>
+            <node concept="1bVj0M" id="47DS8_WGHuI" role="33vP2m">
+              <node concept="3clFbS" id="47DS8_WGHuJ" role="1bW5cS">
+                <node concept="3clFbF" id="47DS8_WGHuK" role="3cqZAp">
+                  <node concept="2OqwBi" id="47DS8_WGHuL" role="3clFbG">
+                    <node concept="37vLTw" id="47DS8_WGHuM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="47DS8_WGHup" resolve="finishedCheckers" />
+                    </node>
+                    <node concept="TSZUe" id="47DS8_WGHuN" role="2OqNvi">
+                      <node concept="37vLTw" id="47DS8_WGHuO" role="25WWJ7">
+                        <ref role="3cqZAo" node="47DS8_WGHwa" resolve="checker" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="47DS8_WGHuP" role="3cqZAp">
+                  <node concept="3cpWsn" id="47DS8_WGHuQ" role="3cpWs9">
+                    <property role="TrG5h" value="numberOfModelCheckerTasks" />
+                    <node concept="10Oyi0" id="47DS8_WGHuR" role="1tU5fm" />
+                    <node concept="17qRlL" id="47DS8_WGHuS" role="33vP2m">
+                      <node concept="2OqwBi" id="47DS8_WGHuT" role="3uHU7w">
+                        <node concept="37vLTw" id="47DS8_WGHuU" role="2Oq$k0">
+                          <ref role="3cqZAo" node="47DS8_WGHtB" resolve="modelsToCheck" />
+                        </node>
+                        <node concept="34oBXx" id="47DS8_WGHuV" role="2OqNvi" />
+                      </node>
+                      <node concept="2OqwBi" id="47DS8_WGHuW" role="3uHU7B">
+                        <node concept="37vLTw" id="47DS8_WGHuX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="47DS8_WGHua" resolve="mpsModelCheckers" />
+                        </node>
+                        <node concept="34oBXx" id="47DS8_WGHuY" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="47DS8_WGHuZ" role="3cqZAp">
+                  <node concept="3cpWsn" id="47DS8_WGHv0" role="3cpWs9">
+                    <property role="TrG5h" value="numberOfModuleCheckerTasks" />
+                    <node concept="10Oyi0" id="47DS8_WGHv1" role="1tU5fm" />
+                    <node concept="17qRlL" id="47DS8_WGHv2" role="33vP2m">
+                      <node concept="2OqwBi" id="47DS8_WGHv3" role="3uHU7w">
+                        <node concept="37vLTw" id="47DS8_WGHv4" role="2Oq$k0">
+                          <ref role="3cqZAo" node="47DS8_WGHtb" resolve="modulesToCheck" />
+                        </node>
+                        <node concept="34oBXx" id="47DS8_WGHv5" role="2OqNvi" />
+                      </node>
+                      <node concept="2OqwBi" id="47DS8_WGHv6" role="3uHU7B">
+                        <node concept="37vLTw" id="47DS8_WGHv7" role="2Oq$k0">
+                          <ref role="3cqZAo" node="47DS8_WGHtZ" resolve="mpsModulesCheckers" />
+                        </node>
+                        <node concept="34oBXx" id="47DS8_WGHv8" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="47DS8_WGHv9" role="3cqZAp">
+                  <node concept="3cpWsn" id="47DS8_WGHva" role="3cpWs9">
+                    <property role="TrG5h" value="numberOfTasks" />
+                    <node concept="10Oyi0" id="47DS8_WGHvb" role="1tU5fm" />
+                    <node concept="3cpWs3" id="47DS8_WGHvc" role="33vP2m">
+                      <node concept="37vLTw" id="47DS8_WGHvd" role="3uHU7w">
+                        <ref role="3cqZAo" node="47DS8_WGHv0" resolve="numberOfModuleCheckerTasks" />
+                      </node>
+                      <node concept="37vLTw" id="47DS8_WGHve" role="3uHU7B">
+                        <ref role="3cqZAo" node="47DS8_WGHuQ" resolve="numberOfModelCheckerTasks" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbJ" id="47DS8_WGHvf" role="3cqZAp">
+                  <node concept="3clFbS" id="47DS8_WGHvg" role="3clFbx">
+                    <node concept="3SKdUt" id="47DS8_WGHvh" role="3cqZAp">
+                      <node concept="1PaTwC" id="47DS8_WGHvi" role="1aUNEU">
+                        <node concept="3oM_SD" id="47DS8_WGHvj" role="1PaTwD">
+                          <property role="3oM_SC" value="nothing" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvk" role="1PaTwD">
+                          <property role="3oM_SC" value="if" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvl" role="1PaTwD">
+                          <property role="3oM_SC" value="some" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvm" role="1PaTwD">
+                          <property role="3oM_SC" value="checkers" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvn" role="1PaTwD">
+                          <property role="3oM_SC" value="are" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvo" role="1PaTwD">
+                          <property role="3oM_SC" value="still" />
+                        </node>
+                        <node concept="3oM_SD" id="47DS8_WGHvp" role="1PaTwD">
+                          <property role="3oM_SC" value="running" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="47DS8_WGHvq" role="3cqZAp" />
+                  </node>
+                  <node concept="3eOVzh" id="47DS8_WGHvr" role="3clFbw">
+                    <node concept="37vLTw" id="47DS8_WGHvs" role="3uHU7w">
+                      <ref role="3cqZAo" node="47DS8_WGHva" resolve="numberOfTasks" />
+                    </node>
+                    <node concept="2OqwBi" id="47DS8_WGHvt" role="3uHU7B">
+                      <node concept="37vLTw" id="47DS8_WGHvu" role="2Oq$k0">
+                        <ref role="3cqZAo" node="47DS8_WGHup" resolve="finishedCheckers" />
+                      </node>
+                      <node concept="34oBXx" id="47DS8_WGHvv" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="47DS8_WGHvw" role="3cqZAp" />
+                <node concept="3cpWs8" id="47DS8_WGHvx" role="3cqZAp">
+                  <node concept="3KEzu6" id="47DS8_WGHvy" role="3cpWs9">
+                    <property role="TrG5h" value="postProcessChecker" />
+                    <node concept="PeGgZ" id="47DS8_WGHvz" role="1tU5fm" />
+                    <node concept="2ShNRf" id="47DS8_WGHv$" role="33vP2m">
+                      <node concept="1pGfFk" id="47DS8_WGHv_" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" node="2S7XOoFqDXP" resolve="PostProcessChecker" />
+                        <node concept="2OqwBi" id="47DS8_WGHvA" role="37wK5m">
+                          <node concept="2WthIp" id="47DS8_WGHvB" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="47DS8_WGHvC" role="2OqNvi">
+                            <ref role="2WH_rO" node="1gEYwydCrUT" resolve="ideaProject" />
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="47DS8_WGHvD" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuh" resolve="mpsPostProcessChecker" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="47DS8_WGHvE" role="3cqZAp">
+                  <node concept="3KEzu6" id="47DS8_WGHvF" role="3cpWs9">
+                    <property role="TrG5h" value="postProcessedErrors" />
+                    <node concept="PeGgZ" id="47DS8_WGHvG" role="1tU5fm" />
+                    <node concept="2OqwBi" id="47DS8_WGHvH" role="33vP2m">
+                      <node concept="37vLTw" id="47DS8_WGHvI" role="2Oq$k0">
+                        <ref role="3cqZAo" node="47DS8_WGHvy" resolve="postProcessChecker" />
+                      </node>
+                      <node concept="liA8E" id="47DS8_WGHvJ" role="2OqNvi">
+                        <ref role="37wK5l" node="2S7XOoFp8Ka" resolve="process" />
+                        <node concept="37vLTw" id="47DS8_WGHvK" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuz" resolve="errorCollector" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="47DS8_WGHvL" role="3cqZAp" />
+                <node concept="3cpWs8" id="47DS8_WGHvM" role="3cqZAp">
+                  <node concept="3KEzu6" id="47DS8_WGHvN" role="3cpWs9">
+                    <property role="TrG5h" value="checkerTool" />
+                    <node concept="PeGgZ" id="47DS8_WGHvO" role="1tU5fm" />
+                    <node concept="2YIFZM" id="47DS8_WIKZE" role="33vP2m">
+                      <ref role="37wK5l" node="47DS8_WI_FR" resolve="createForProject" />
+                      <ref role="1Pybhc" node="2S7XOoGQVeE" resolve="MyModelCheckerTool" />
+                      <node concept="2OqwBi" id="47DS8_WIKZF" role="37wK5m">
+                        <node concept="2WthIp" id="47DS8_WIKZG" role="2Oq$k0" />
+                        <node concept="1DTwFV" id="47DS8_WIKZH" role="2OqNvi">
+                          <ref role="2WH_rO" node="1gEYwydCrUT" resolve="ideaProject" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="47DS8_WGHvU" role="3cqZAp">
+                  <node concept="2OqwBi" id="47DS8_WGHvV" role="3clFbG">
+                    <node concept="37vLTw" id="47DS8_WGHvW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="47DS8_WGHvN" resolve="checkerTool" />
+                    </node>
+                    <node concept="liA8E" id="47DS8_WGHvX" role="2OqNvi">
+                      <ref role="37wK5l" node="47DS8_WtK3t" resolve="displayResults" />
+                      <node concept="37vLTw" id="47DS8_WGHvY" role="37wK5m">
+                        <ref role="3cqZAo" node="47DS8_WGHvF" resolve="postProcessedErrors" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="47DS8_WGHvZ" role="3cqZAp" />
+                <node concept="3clFbF" id="47DS8_WGHw0" role="3cqZAp">
+                  <node concept="2YIFZM" id="47DS8_WGHw1" role="3clFbG">
+                    <ref role="1Pybhc" node="3w1r$vx_ED6" resolve="EditorComponentReadonlySupport" />
+                    <ref role="37wK5l" node="3w1r$vxCVmx" resolve="makeAllOpenEditorsWritable" />
+                    <node concept="2OqwBi" id="47DS8_WGHw2" role="37wK5m">
+                      <node concept="2WthIp" id="47DS8_WGHw3" role="2Oq$k0" />
+                      <node concept="1DTwFV" id="47DS8_WGHw4" role="2OqNvi">
+                        <ref role="2WH_rO" node="1gEYwydCrUT" resolve="ideaProject" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="47DS8_WGHw5" role="3cqZAp">
+                  <node concept="2YIFZM" id="47DS8_WGHw6" role="3clFbG">
+                    <ref role="1Pybhc" node="3w1r$vxmCzQ" resolve="ConcurrentCheckerLogger" />
+                    <ref role="37wK5l" node="7DP0Gxfu9xO" resolve="durationOfAction" />
+                    <node concept="tl45R" id="47DS8_WGHw7" role="37wK5m" />
+                    <node concept="37vLTw" id="47DS8_WGHw8" role="37wK5m">
+                      <ref role="3cqZAo" node="47DS8_WGHt6" resolve="actionStartTime" />
+                    </node>
+                    <node concept="3clFbT" id="47DS8_WGHw9" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTG" id="47DS8_WGHwa" role="1bW2Oz">
+                <property role="TrG5h" value="checker" />
+                <node concept="3uibUv" id="47DS8_WGHwb" role="1tU5fm">
+                  <ref role="3uigEE" node="2S7XOoFd072" resolve="CheckerTask" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHwc" role="3cqZAp" />
+        <node concept="2Gpval" id="47DS8_WGHwd" role="3cqZAp">
+          <node concept="2GrKxI" id="47DS8_WGHwe" role="2Gsz3X">
+            <property role="TrG5h" value="checker" />
+          </node>
+          <node concept="3clFbS" id="47DS8_WGHwf" role="2LFqv$">
+            <node concept="2Gpval" id="47DS8_WGHwg" role="3cqZAp">
+              <node concept="2GrKxI" id="47DS8_WGHwh" role="2Gsz3X">
+                <property role="TrG5h" value="model" />
+              </node>
+              <node concept="37vLTw" id="47DS8_WGHwi" role="2GsD0m">
+                <ref role="3cqZAo" node="47DS8_WGHtB" resolve="modelsToCheck" />
+              </node>
+              <node concept="3clFbS" id="47DS8_WGHwj" role="2LFqv$">
+                <node concept="3cpWs8" id="47DS8_WGHwk" role="3cqZAp">
+                  <node concept="3KEzu6" id="47DS8_WGHwl" role="3cpWs9">
+                    <property role="TrG5h" value="task" />
+                    <node concept="2ShNRf" id="47DS8_WGHwm" role="33vP2m">
+                      <node concept="1pGfFk" id="47DS8_WGHwn" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" node="2S7XOoFdOnK" resolve="ModelCheckerTask" />
+                        <node concept="2OqwBi" id="47DS8_WGHwo" role="37wK5m">
+                          <node concept="2WthIp" id="47DS8_WGHwp" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="47DS8_WGHwq" role="2OqNvi">
+                            <ref role="2WH_rO" node="1gEYwydCrUT" resolve="ideaProject" />
+                          </node>
+                        </node>
+                        <node concept="2GrUjf" id="47DS8_WGHwr" role="37wK5m">
+                          <ref role="2Gs0qQ" node="47DS8_WGHwe" resolve="checker" />
+                        </node>
+                        <node concept="2OqwBi" id="47DS8_WGHws" role="37wK5m">
+                          <node concept="2ShNRf" id="47DS8_WGHwt" role="2Oq$k0">
+                            <node concept="2HTt$P" id="47DS8_WGHwu" role="2ShVmc">
+                              <node concept="3uibUv" id="47DS8_WGHwv" role="2HTBi0">
+                                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                              </node>
+                              <node concept="2GrUjf" id="47DS8_WGHww" role="2HTEbv">
+                                <ref role="2Gs0qQ" node="47DS8_WGHwh" resolve="model" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="ANE8D" id="47DS8_WGHwx" role="2OqNvi" />
+                        </node>
+                        <node concept="37vLTw" id="47DS8_WGHwy" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuz" resolve="errorCollector" />
+                        </node>
+                        <node concept="37vLTw" id="47DS8_WGHwz" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuE" resolve="onCheckerFinished" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="PeGgZ" id="47DS8_WGHw$" role="1tU5fm" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="47DS8_WGHw_" role="3cqZAp">
+                  <node concept="2OqwBi" id="47DS8_WGHwA" role="3clFbG">
+                    <node concept="liA8E" id="47DS8_WGHwB" role="2OqNvi">
+                      <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
+                      <node concept="37vLTw" id="47DS8_WGHwC" role="37wK5m">
+                        <ref role="3cqZAo" node="47DS8_WGHwl" resolve="task" />
+                      </node>
+                    </node>
+                    <node concept="2YIFZM" id="47DS8_WGHwD" role="2Oq$k0">
+                      <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="47DS8_WGHwE" role="2GsD0m">
+            <ref role="3cqZAo" node="47DS8_WGHua" resolve="mpsModelCheckers" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHwF" role="3cqZAp" />
+        <node concept="2Gpval" id="47DS8_WGHwG" role="3cqZAp">
+          <node concept="2GrKxI" id="47DS8_WGHwH" role="2Gsz3X">
+            <property role="TrG5h" value="checker" />
+          </node>
+          <node concept="37vLTw" id="47DS8_WGHwI" role="2GsD0m">
+            <ref role="3cqZAo" node="47DS8_WGHtZ" resolve="mpsModulesCheckers" />
+          </node>
+          <node concept="3clFbS" id="47DS8_WGHwJ" role="2LFqv$">
+            <node concept="2Gpval" id="47DS8_WGHwK" role="3cqZAp">
+              <node concept="2GrKxI" id="47DS8_WGHwL" role="2Gsz3X">
+                <property role="TrG5h" value="module" />
+              </node>
+              <node concept="37vLTw" id="47DS8_WGHwM" role="2GsD0m">
+                <ref role="3cqZAo" node="47DS8_WGHtb" resolve="modulesToCheck" />
+              </node>
+              <node concept="3clFbS" id="47DS8_WGHwN" role="2LFqv$">
+                <node concept="3cpWs8" id="47DS8_WGHwO" role="3cqZAp">
+                  <node concept="3KEzu6" id="47DS8_WGHwP" role="3cpWs9">
+                    <property role="TrG5h" value="task" />
+                    <node concept="2ShNRf" id="47DS8_WGHwQ" role="33vP2m">
+                      <node concept="1pGfFk" id="47DS8_WGHwR" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" node="47DS8_WkSJE" resolve="ModuleCheckerTask" />
+                        <node concept="2OqwBi" id="47DS8_WGHwS" role="37wK5m">
+                          <node concept="2WthIp" id="47DS8_WGHwT" role="2Oq$k0" />
+                          <node concept="1DTwFV" id="47DS8_WGHwU" role="2OqNvi">
+                            <ref role="2WH_rO" node="1gEYwydCrUT" resolve="ideaProject" />
+                          </node>
+                        </node>
+                        <node concept="2GrUjf" id="47DS8_WGHwV" role="37wK5m">
+                          <ref role="2Gs0qQ" node="47DS8_WGHwH" resolve="checker" />
+                        </node>
+                        <node concept="2OqwBi" id="47DS8_WGHwW" role="37wK5m">
+                          <node concept="2ShNRf" id="47DS8_WGHwX" role="2Oq$k0">
+                            <node concept="2HTt$P" id="47DS8_WGHwY" role="2ShVmc">
+                              <node concept="3uibUv" id="47DS8_WGHwZ" role="2HTBi0">
+                                <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                              </node>
+                              <node concept="2GrUjf" id="47DS8_WGHx0" role="2HTEbv">
+                                <ref role="2Gs0qQ" node="47DS8_WGHwL" resolve="module" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="ANE8D" id="47DS8_WGHx1" role="2OqNvi" />
+                        </node>
+                        <node concept="37vLTw" id="47DS8_WGHx2" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuz" resolve="errorCollector" />
+                        </node>
+                        <node concept="37vLTw" id="47DS8_WGHx3" role="37wK5m">
+                          <ref role="3cqZAo" node="47DS8_WGHuE" resolve="onCheckerFinished" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="PeGgZ" id="47DS8_WGHx4" role="1tU5fm" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="47DS8_WGHx5" role="3cqZAp">
+                  <node concept="2OqwBi" id="47DS8_WGHx6" role="3clFbG">
+                    <node concept="2YIFZM" id="47DS8_WGHx7" role="2Oq$k0">
+                      <ref role="37wK5l" to="xygl:~ProgressManager.getInstance()" resolve="getInstance" />
+                      <ref role="1Pybhc" to="xygl:~ProgressManager" resolve="ProgressManager" />
+                    </node>
+                    <node concept="liA8E" id="47DS8_WGHx8" role="2OqNvi">
+                      <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task)" resolve="run" />
+                      <node concept="37vLTw" id="47DS8_WGHx9" role="37wK5m">
+                        <ref role="3cqZAo" node="47DS8_WGHwP" resolve="task" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="47DS8_WGHr$" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1QGGSu" id="6hehsrpcaUE" role="3Uehp1">
+      <node concept="10M0yZ" id="6hehsrpcaUF" role="3xaMm5">
+        <ref role="1PxDUh" to="l7us:~MPSIcons$General" resolve="General" />
+        <ref role="3cqZAo" to="l7us:~MPSIcons$General.ModelChecker" resolve="ModelChecker" />
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="47DS8_WG$jZ">
+    <property role="3GE5qa" value="action-groups" />
+    <property role="TrG5h" value="ConcurrentProjectCheckGroup" />
+    <node concept="tT9cl" id="47DS8_WG$kx" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4HGL" resolve="ProjectActions" />
+      <ref role="2f8Tey" to="tprs:1gEYwydCqUT" resolve="check" />
+    </node>
+    <node concept="ftmFs" id="47DS8_WG$k$" role="ftER_">
+      <node concept="tCFHf" id="47DS8_WG$kB" role="ftvYc">
+        <ref role="tCJdB" node="47DS8_WGr_v" resolve="CheckProjectConcurrently" />
+      </node>
     </node>
   </node>
 </model>
