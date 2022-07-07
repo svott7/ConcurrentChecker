@@ -2199,187 +2199,21 @@
                   </node>
                 </node>
               </node>
-              <node concept="3J1_TO" id="47DS8_WtK53" role="3cqZAp">
-                <node concept="3uVAMA" id="47DS8_WtK54" role="1zxBo5">
-                  <node concept="XOnhg" id="47DS8_WtK55" role="1zc67B">
-                    <property role="TrG5h" value="e" />
-                    <node concept="nSUau" id="47DS8_WtK56" role="1tU5fm">
-                      <node concept="3uibUv" id="47DS8_WtK57" role="nSUat">
-                        <ref role="3uigEE" to="wyt6:~AssertionError" resolve="AssertionError" />
-                      </node>
-                    </node>
+              <node concept="3clFbF" id="47DS8_WtK5Y" role="3cqZAp">
+                <node concept="2OqwBi" id="47DS8_WtK5Z" role="3clFbG">
+                  <node concept="37vLTw" id="47DS8_WtK60" role="2Oq$k0">
+                    <ref role="3cqZAo" node="47DS8_WtK3G" resolve="modelCheckerTool" />
                   </node>
-                  <node concept="3clFbS" id="47DS8_WtK58" role="1zc67A">
-                    <node concept="3SKdUt" id="47DS8_WtK59" role="3cqZAp">
-                      <node concept="1PaTwC" id="47DS8_WtK5a" role="1aUNEU">
-                        <node concept="3oM_SD" id="47DS8_WtK5b" role="1PaTwD">
-                          <property role="3oM_SC" value="Hack:" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5c" role="1PaTwD">
-                          <property role="3oM_SC" value="there" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5d" role="1PaTwD">
-                          <property role="3oM_SC" value="is" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5e" role="1PaTwD">
-                          <property role="3oM_SC" value="an" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5f" role="1PaTwD">
-                          <property role="3oM_SC" value="AssertionError" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5g" role="1PaTwD">
-                          <property role="3oM_SC" value="thrown" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5h" role="1PaTwD">
-                          <property role="3oM_SC" value="once" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5i" role="1PaTwD">
-                          <property role="3oM_SC" value="a" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5j" role="1PaTwD">
-                          <property role="3oM_SC" value="open" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5k" role="1PaTwD">
-                          <property role="3oM_SC" value="tab" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5l" role="1PaTwD">
-                          <property role="3oM_SC" value="is" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5m" role="1PaTwD">
-                          <property role="3oM_SC" value="disposed" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5n" role="1PaTwD">
-                          <property role="3oM_SC" value="in" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5o" role="1PaTwD">
-                          <property role="3oM_SC" value="order" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5p" role="1PaTwD">
-                          <property role="3oM_SC" value="to" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5q" role="1PaTwD">
-                          <property role="3oM_SC" value="open" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5r" role="1PaTwD">
-                          <property role="3oM_SC" value="a" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5s" role="1PaTwD">
-                          <property role="3oM_SC" value="new" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5t" role="1PaTwD">
-                          <property role="3oM_SC" value="ModelChecker" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5u" role="1PaTwD">
-                          <property role="3oM_SC" value="tab." />
-                        </node>
-                      </node>
+                  <node concept="liA8E" id="47DS8_WtK61" role="2OqNvi">
+                    <ref role="37wK5l" to="phxh:4aNWY1v0QZD" resolve="showTabWithResults" />
+                    <node concept="37vLTw" id="47DS8_WtK62" role="37wK5m">
+                      <ref role="3cqZAo" node="47DS8_WtK3S" resolve="viewer" />
                     </node>
-                    <node concept="3SKdUt" id="47DS8_WtK5v" role="3cqZAp">
-                      <node concept="1PaTwC" id="47DS8_WtK5w" role="1aUNEU">
-                        <node concept="3oM_SD" id="47DS8_WtK5x" role="1PaTwD">
-                          <property role="3oM_SC" value="This" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5y" role="1PaTwD">
-                          <property role="3oM_SC" value="code" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5z" role="1PaTwD">
-                          <property role="3oM_SC" value="catches" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5$" role="1PaTwD">
-                          <property role="3oM_SC" value="the" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5_" role="1PaTwD">
-                          <property role="3oM_SC" value="assertion" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5A" role="1PaTwD">
-                          <property role="3oM_SC" value="and" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5B" role="1PaTwD">
-                          <property role="3oM_SC" value="tries" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5C" role="1PaTwD">
-                          <property role="3oM_SC" value="to" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5D" role="1PaTwD">
-                          <property role="3oM_SC" value="add" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5E" role="1PaTwD">
-                          <property role="3oM_SC" value="the" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5F" role="1PaTwD">
-                          <property role="3oM_SC" value="new" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5G" role="1PaTwD">
-                          <property role="3oM_SC" value="tab" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5H" role="1PaTwD">
-                          <property role="3oM_SC" value="a" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5I" role="1PaTwD">
-                          <property role="3oM_SC" value="second" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5J" role="1PaTwD">
-                          <property role="3oM_SC" value="time." />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5K" role="1PaTwD">
-                          <property role="3oM_SC" value="Which" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5L" role="1PaTwD">
-                          <property role="3oM_SC" value="works," />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5M" role="1PaTwD">
-                          <property role="3oM_SC" value="but" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5N" role="1PaTwD">
-                          <property role="3oM_SC" value="is" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5O" role="1PaTwD">
-                          <property role="3oM_SC" value="totally" />
-                        </node>
-                        <node concept="3oM_SD" id="47DS8_WtK5P" role="1PaTwD">
-                          <property role="3oM_SC" value="crap" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="47DS8_WtK63" role="37wK5m">
+                      <ref role="3cqZAo" node="47DS8_WsY26" resolve="tabTitle" />
                     </node>
-                    <node concept="3clFbF" id="47DS8_WtK5Q" role="3cqZAp">
-                      <node concept="2OqwBi" id="47DS8_WtK5R" role="3clFbG">
-                        <node concept="37vLTw" id="47DS8_WtK5S" role="2Oq$k0">
-                          <ref role="3cqZAo" node="47DS8_WtK3G" resolve="modelCheckerTool" />
-                        </node>
-                        <node concept="liA8E" id="47DS8_WtK5T" role="2OqNvi">
-                          <ref role="37wK5l" to="phxh:4aNWY1v0QZD" resolve="showTabWithResults" />
-                          <node concept="37vLTw" id="47DS8_WtK5U" role="37wK5m">
-                            <ref role="3cqZAo" node="47DS8_WtK3S" resolve="viewer" />
-                          </node>
-                          <node concept="37vLTw" id="47DS8_WtK5V" role="37wK5m">
-                            <ref role="3cqZAo" node="47DS8_WsY26" resolve="tabTitle" />
-                          </node>
-                          <node concept="37vLTw" id="47DS8_WtK5W" role="37wK5m">
-                            <ref role="3cqZAo" node="47DS8_Wt5fR" resolve="tabIcon" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbS" id="47DS8_WtK5X" role="1zxBo7">
-                  <node concept="3clFbF" id="47DS8_WtK5Y" role="3cqZAp">
-                    <node concept="2OqwBi" id="47DS8_WtK5Z" role="3clFbG">
-                      <node concept="37vLTw" id="47DS8_WtK60" role="2Oq$k0">
-                        <ref role="3cqZAo" node="47DS8_WtK3G" resolve="modelCheckerTool" />
-                      </node>
-                      <node concept="liA8E" id="47DS8_WtK61" role="2OqNvi">
-                        <ref role="37wK5l" to="phxh:4aNWY1v0QZD" resolve="showTabWithResults" />
-                        <node concept="37vLTw" id="47DS8_WtK62" role="37wK5m">
-                          <ref role="3cqZAo" node="47DS8_WtK3S" resolve="viewer" />
-                        </node>
-                        <node concept="37vLTw" id="47DS8_WtK63" role="37wK5m">
-                          <ref role="3cqZAo" node="47DS8_WsY26" resolve="tabTitle" />
-                        </node>
-                        <node concept="37vLTw" id="47DS8_WtK64" role="37wK5m">
-                          <ref role="3cqZAo" node="47DS8_Wt5fR" resolve="tabIcon" />
-                        </node>
-                      </node>
+                    <node concept="37vLTw" id="47DS8_WtK64" role="37wK5m">
+                      <ref role="3cqZAo" node="47DS8_Wt5fR" resolve="tabIcon" />
                     </node>
                   </node>
                 </node>
