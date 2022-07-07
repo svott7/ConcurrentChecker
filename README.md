@@ -17,7 +17,6 @@ TBC Example
 
 ##### TODOs
 
-- [ ] lock editors and display warning. TODO test
 - [ ] lock newly opened editors
 - [ ] hint to user that editor is readonly
 
