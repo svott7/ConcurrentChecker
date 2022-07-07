@@ -17,7 +17,6 @@ TBC Example
 
 ##### TODOs
 
-- [ ] lock newly opened editors
 - [ ] hint to user that editor is readonly
 
 ### Usage
