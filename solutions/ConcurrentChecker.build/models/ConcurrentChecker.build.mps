@@ -235,11 +235,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7DP0GxftJis" role="3bR37C">
-          <node concept="3bR9La" id="7DP0GxftJit" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1_7hqbu4mXQ" resolve="jetbrains.mps.ide.modelchecker" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7DP0GxftJiu" role="3bR37C">
           <node concept="3bR9La" id="7DP0GxftJiv" role="1SiIV1">
             <property role="3bR36h" value="true" />

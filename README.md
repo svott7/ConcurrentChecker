@@ -11,15 +11,17 @@ TBC Example
 #### Drawbacks and TODOs
 
 - The checker can not be executed before generation or committing
+- Some write actions lead to a blocking UI. I.e you can navigate in editors, even open new once, but once you trigger write actions those are ignored by editors write-lock such as "Copy" (Ctrl+C), the UI blocks until all model checker background tasks are finished
+- It's more difficult to cancel the Concurrent Model Checker as you have to press each cancel button of each background thread instead of a single button.
 
 ##### TODOs
 
-- [ ] lock editors and display warning
-- [ ] add checkers for modules
-- [ ] are models also checked concurrently?
+- [ ] lock editors and display warning. TODO test
+- [ ] lock newly opened editors
+- [ ] hint to user that editor is readonly
 - [ ] only check models with changes
 - [ ] allow more than on post process checker
-- [ ] allow rerun
+- [ ] allow re-run
 
 ### Usage
 
@@ -46,6 +48,10 @@ Call the action using "Find Action...".
 To avoid UI freezing, editors are read-only while running the checkers. The user can look around but editor input event are ignored, otherwise the UI would freeze until checkers are finished.
 
 There is a helper action "MakeThisEditorReadonlyOrWritable" which accessible via "Find Action..." for test purposes. 
+
+### Can I remove the old actions from context menus?
+
+Yes, using `com.mbeddr.mpsutil.actionsfilter` which is part of [mbeddr.core](https://github.com/mbeddr/mbeddr.core/issues).
 
 ### Build instructions
 
