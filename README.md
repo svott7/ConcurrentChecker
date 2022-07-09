@@ -17,7 +17,7 @@ TBC Example
 
 ##### TODOs
 
-- [ ] hint to user that editor is readonly
+- 
 
 ### Usage
 
