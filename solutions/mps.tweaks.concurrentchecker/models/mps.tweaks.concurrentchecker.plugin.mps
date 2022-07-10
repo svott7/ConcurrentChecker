@@ -2502,7 +2502,7 @@
   </node>
   <node concept="312cEu" id="2S7XOoFp1ol">
     <property role="3GE5qa" value="checker-impl" />
-    <property role="TrG5h" value="PostProcessChecker" />
+    <property role="TrG5h" value="SequentialPostProcessChecker" />
     <node concept="2tJIrI" id="2S7XOoFrY1M" role="jymVt" />
     <node concept="312cEg" id="2S7XOoFph9R" role="jymVt">
       <property role="TrG5h" value="repository" />
@@ -4868,9 +4868,9 @@
   </node>
   <node concept="2DaZZR" id="3ZFBIUSvim_" />
   <node concept="sE7Ow" id="26PAZwtCp1y">
-    <property role="2uzpH1" value="Make This Editor Readonly or Writable" />
-    <property role="TrG5h" value="MakeThisEditorReadonlyOrWritable" />
-    <property role="3GE5qa" value="editor-component-support" />
+    <property role="2uzpH1" value="Make Editor Readonly or Writable" />
+    <property role="TrG5h" value="MakeEditorReadonlyOrWritable" />
+    <property role="3GE5qa" value="editor-support" />
     <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
     <node concept="1DS2jV" id="26PAZwtCp1z" role="1NuT2Z">
       <property role="TrG5h" value="editorComponent" />
@@ -4948,7 +4948,7 @@
                   <ref role="3cqZAo" node="3w1r$vxATCC" resolve="targetState" />
                 </node>
                 <node concept="Xl_RD" id="3w1r$vxASLn" role="3uHU7B">
-                  <property role="Xl_RC" value="Make This Editor " />
+                  <property role="Xl_RC" value="Make Editor " />
                 </node>
               </node>
             </node>
@@ -5397,8 +5397,8 @@
     </node>
   </node>
   <node concept="312cEu" id="3w1r$vx_ED6">
-    <property role="3GE5qa" value="editor-component-support" />
-    <property role="TrG5h" value="EditorComponentReadonlySupport" />
+    <property role="3GE5qa" value="editor-support" />
+    <property role="TrG5h" value="EditorReadonlySupport" />
     <node concept="2tJIrI" id="7DP0GxeVrt2" role="jymVt" />
     <node concept="Wx3nA" id="3w1r$vx_I01" role="jymVt">
       <property role="3TUv4t" value="true" />
@@ -5714,7 +5714,7 @@
   </node>
   <node concept="312cEu" id="6Qju3tF7Bf8">
     <property role="TrG5h" value="IdeaEditors" />
-    <property role="3GE5qa" value="editor-component-support" />
+    <property role="3GE5qa" value="editor-support" />
     <node concept="2tJIrI" id="6Qju3tF8k6p" role="jymVt" />
     <node concept="2YIFZL" id="6Qju3tF8jlb" role="jymVt">
       <property role="TrG5h" value="openedIdeaEditors" />
@@ -5816,51 +5816,6 @@
           <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
         </node>
       </node>
-    </node>
-    <node concept="2tJIrI" id="6Qju3tF8j8A" role="jymVt" />
-    <node concept="2YIFZL" id="6Qju3tF7XbR" role="jymVt">
-      <property role="TrG5h" value="updateAll" />
-      <node concept="3clFbS" id="6Qju3tF7DW9" role="3clF47">
-        <node concept="3clFbF" id="6Qju3tF7FZe" role="3cqZAp">
-          <node concept="2OqwBi" id="6Qju3tF7T0v" role="3clFbG">
-            <node concept="2YIFZM" id="6Qju3tF8jlg" role="2Oq$k0">
-              <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="IdeaEditors" />
-              <ref role="37wK5l" node="6Qju3tF8jlb" resolve="openEditors" />
-              <node concept="37vLTw" id="6Qju3tF8jlf" role="37wK5m">
-                <ref role="3cqZAo" node="6Qju3tF7F9Z" resolve="project" />
-              </node>
-            </node>
-            <node concept="2es0OD" id="6Qju3tF7UVx" role="2OqNvi">
-              <node concept="1bVj0M" id="6Qju3tF7UVz" role="23t8la">
-                <node concept="3clFbS" id="6Qju3tF7UV$" role="1bW5cS">
-                  <node concept="3clFbF" id="6Qju3tF7VfQ" role="3cqZAp">
-                    <node concept="2OqwBi" id="6Qju3tF7VnV" role="3clFbG">
-                      <node concept="37vLTw" id="6Qju3tF7VfP" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6Qju3tF7UV_" resolve="it" />
-                      </node>
-                      <node concept="liA8E" id="6Qju3tF7W97" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorComponent.update()" resolve="update" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Rh6nW" id="6Qju3tF7UV_" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="6Qju3tF7UVA" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="6Qju3tF7F9Z" role="3clF46">
-        <property role="TrG5h" value="ideaProject" />
-        <node concept="3uibUv" id="6Qju3tF7F9Y" role="1tU5fm">
-          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="6Qju3tF7DVV" role="3clF45" />
-      <node concept="3Tm1VV" id="6Qju3tF7BEG" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="eduRrcWR4z" role="jymVt" />
     <node concept="2YIFZL" id="eduRrcWTS7" role="jymVt">
@@ -8051,13 +8006,20 @@
     <node concept="3Tm1VV" id="8TBVw958Qt" role="1B3o_S" />
   </node>
   <node concept="2uRRBy" id="8TBVwa2xYk">
-    <property role="3GE5qa" value="editor-component-support" />
-    <property role="TrG5h" value="CMSEditorExtensionPluginForCMS" />
+    <property role="3GE5qa" value="editor-support" />
+    <property role="TrG5h" value="CheckerProjectPlugin" />
     <node concept="2BZ0e9" id="8TBVwa2xYl" role="2uRRBA">
       <property role="TrG5h" value="editorExtension" />
       <node concept="3Tm6S6" id="8TBVwa2xYm" role="1B3o_S" />
       <node concept="3uibUv" id="8TBVwa2yeC" role="1tU5fm">
         <ref role="3uigEE" node="3xGyUPKHbuD" resolve="CMSEditorExtension" />
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="eduRrcWu9h" role="2uRRBA">
+      <property role="TrG5h" value="readonlyWarningProvider" />
+      <node concept="3Tm6S6" id="eduRrcWu9i" role="1B3o_S" />
+      <node concept="3uibUv" id="eduRrcWusb" role="1tU5fm">
+        <ref role="3uigEE" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
       </node>
     </node>
     <node concept="2uRRBT" id="8TBVwa2zvd" role="2uRRB$">
@@ -8106,6 +8068,68 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3xGyUPKHSzV" role="3cqZAp" />
+        <node concept="3clFbF" id="3xGyUPKHUFH" role="3cqZAp">
+          <node concept="37vLTI" id="3xGyUPKHV_c" role="3clFbG">
+            <node concept="2OqwBi" id="3xGyUPKHUTS" role="37vLTJ">
+              <node concept="2WthIp" id="3xGyUPKHUFF" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="3xGyUPKHVsk" role="2OqNvi">
+                <ref role="2WH_rO" node="eduRrcWu9h" resolve="readonlyWarningProvider" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="2L7qGPDfAgE" role="37vLTx">
+              <node concept="HV5vD" id="2L7qGPDg3Yh" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="HV5vE" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4AucYKW1cy7" role="3cqZAp">
+          <node concept="3cpWsn" id="4AucYKW1cy8" role="3cpWs9">
+            <property role="TrG5h" value="newDisposable" />
+            <node concept="3uibUv" id="4AucYKW1cvB" role="1tU5fm">
+              <ref role="3uigEE" to="v23q:~Disposable" resolve="Disposable" />
+            </node>
+            <node concept="2YIFZM" id="4AucYKW1cy9" role="33vP2m">
+              <ref role="37wK5l" to="zn9m:~Disposer.newDisposable(java.lang.String)" resolve="newDisposable" />
+              <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
+              <node concept="2OqwBi" id="4AucYKW1cya" role="37wK5m">
+                <node concept="3VsKOn" id="4AucYKW1cyb" role="2Oq$k0">
+                  <ref role="3VsUkX" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
+                </node>
+                <node concept="liA8E" id="4AucYKW1cyc" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2L7qGPDf$3r" role="3cqZAp">
+          <node concept="2OqwBi" id="2L7qGPDf_sR" role="3clFbG">
+            <node concept="2OqwBi" id="2L7qGPDf$g5" role="2Oq$k0">
+              <node concept="10M0yZ" id="2L7qGPDf$6h" role="2Oq$k0">
+                <ref role="3cqZAo" to="pgpb:~EditorWarningsProvider.EP_NAME" resolve="EP_NAME" />
+                <ref role="1PxDUh" to="pgpb:~EditorWarningsProvider" resolve="EditorWarningsProvider" />
+              </node>
+              <node concept="liA8E" id="2L7qGPDf_ns" role="2OqNvi">
+                <ref role="37wK5l" to="9ti4:~ExtensionPointName.getPoint()" resolve="getPoint" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2L7qGPDfAaa" role="2OqNvi">
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object,com.intellij.openapi.Disposable)" resolve="registerExtension" />
+              <node concept="2OqwBi" id="eduRrcWu_Z" role="37wK5m">
+                <node concept="2WthIp" id="eduRrcWuA2" role="2Oq$k0" />
+                <node concept="2BZ7hE" id="eduRrcWuA4" role="2OqNvi">
+                  <ref role="2WH_rO" node="eduRrcWu9h" resolve="readonlyWarningProvider" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="4AucYKW1d28" role="37wK5m">
+                <ref role="3cqZAo" node="4AucYKW1cy8" resolve="newDisposable" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2uRRBN" id="8TBVwa2_$I" role="2uRRB_">
@@ -8128,6 +8152,25 @@
                 <node concept="2BZ7hE" id="8TBVwa2BEU" role="2OqNvi">
                   <ref role="2WH_rO" node="8TBVwa2xYl" resolve="editorExtension" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="eduRrcWrdk" role="3cqZAp">
+          <node concept="2OqwBi" id="eduRrcWryu" role="3clFbG">
+            <node concept="2OqwBi" id="eduRrcWrdm" role="2Oq$k0">
+              <node concept="10M0yZ" id="eduRrcWrdn" role="2Oq$k0">
+                <ref role="3cqZAo" to="pgpb:~EditorWarningsProvider.EP_NAME" resolve="EP_NAME" />
+                <ref role="1PxDUh" to="pgpb:~EditorWarningsProvider" resolve="EditorWarningsProvider" />
+              </node>
+              <node concept="liA8E" id="eduRrcWrdo" role="2OqNvi">
+                <ref role="37wK5l" to="9ti4:~ExtensionPointName.getPoint()" resolve="getPoint" />
+              </node>
+            </node>
+            <node concept="liA8E" id="eduRrcWs8g" role="2OqNvi">
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Class)" resolve="unregisterExtension" />
+              <node concept="3VsKOn" id="eduRrcWyrp" role="37wK5m">
+                <ref role="3VsUkX" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
               </node>
             </node>
           </node>
@@ -8181,19 +8224,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="3xGyUPKE_k0" role="3cqZAp">
-          <node concept="1PaTwC" id="3xGyUPKE_k1" role="1aUNEU">
-            <node concept="3oM_SD" id="3xGyUPKE_lf" role="1PaTwD">
-              <property role="3oM_SC" value="todo" />
-            </node>
-            <node concept="3oM_SD" id="3xGyUPKE_lh" role="1PaTwD">
-              <property role="3oM_SC" value="move" />
-            </node>
-            <node concept="3oM_SD" id="3xGyUPKE_lk" role="1PaTwD">
-              <property role="3oM_SC" value="logic" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="8TBVwa5c3Q" role="3cqZAp">
           <node concept="2YIFZM" id="8TBVwa5c3S" role="3clFbG">
             <ref role="37wK5l" node="3w1r$vxCzwL" resolve="makeAllOpenEditorsReadonly" />
@@ -8218,7 +8248,7 @@
               <property role="3oM_SC" value="are" />
             </node>
             <node concept="3oM_SD" id="3xGyUPKEAl6" role="1PaTwD">
-              <property role="3oM_SC" value="readonly" />
+              <property role="3oM_SC" value="readonly," />
             </node>
             <node concept="3oM_SD" id="3xGyUPKEAlr" role="1PaTwD">
               <property role="3oM_SC" value="it" />
@@ -8253,13 +8283,7 @@
             <node concept="3oM_SD" id="3xGyUPKEAp7" role="1PaTwD">
               <property role="3oM_SC" value="we" />
             </node>
-            <node concept="3oM_SD" id="3xGyUPKEApo" role="1PaTwD">
-              <property role="3oM_SC" value="have" />
-            </node>
-            <node concept="3oM_SD" id="3xGyUPKEAr_" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="3xGyUPKEArS" role="1PaTwD">
+            <node concept="3oM_SD" id="3xGyUPKImlq" role="1PaTwD">
               <property role="3oM_SC" value="call" />
             </node>
             <node concept="3oM_SD" id="3xGyUPKEAsc" role="1PaTwD">
@@ -8330,16 +8354,70 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="3xGyUPKInsx" role="jymVt" />
+    <node concept="2YIFZL" id="3xGyUPKIpcl" role="jymVt">
+      <property role="TrG5h" value="makeEditorReadonlyIfRunning" />
+      <node concept="3clFbS" id="3xGyUPKIpco" role="3clF47">
+        <node concept="3clFbJ" id="3xGyUPKIqPc" role="3cqZAp">
+          <node concept="3clFbS" id="3xGyUPKIqPd" role="3clFbx">
+            <node concept="3clFbF" id="3xGyUPKIqPe" role="3cqZAp">
+              <node concept="2YIFZM" id="3xGyUPKIr_t" role="3clFbG">
+                <ref role="37wK5l" node="3w1r$vx_EEI" resolve="makeReadonly" />
+                <ref role="1Pybhc" node="3w1r$vx_ED6" resolve="EditorReadonlySupport" />
+                <node concept="37vLTw" id="3xGyUPKIr_u" role="37wK5m">
+                  <ref role="3cqZAo" node="3xGyUPKIpLM" resolve="editorComponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3xGyUPKIqPk" role="3cqZAp">
+              <node concept="2YIFZM" id="3xGyUPKIqPl" role="3clFbG">
+                <ref role="37wK5l" node="eduRrcWTS7" resolve="updateMPSEditorWarnings" />
+                <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="IdeaEditors" />
+                <node concept="37vLTw" id="3xGyUPKIrEG" role="37wK5m">
+                  <ref role="3cqZAo" node="3xGyUPKIra4" resolve="ideaProject" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1rXfSq" id="3xGyUPKIqRD" role="3clFbw">
+            <ref role="37wK5l" node="8TBVwa5u_W" resolve="isRunning" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3xGyUPKIotw" role="1B3o_S" />
+      <node concept="3cqZAl" id="3xGyUPKIpbY" role="3clF45" />
+      <node concept="37vLTG" id="3xGyUPKIpLM" role="3clF46">
+        <property role="TrG5h" value="editorComponent" />
+        <node concept="3uibUv" id="3xGyUPKIpLL" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3xGyUPKIra4" role="3clF46">
+        <property role="TrG5h" value="ideaProject" />
+        <node concept="3uibUv" id="3xGyUPKIra5" role="1tU5fm">
+          <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="8TBVwa2ZOy" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="8TBVwaDLdS">
-    <property role="3GE5qa" value="editor-component-support" />
+    <property role="3GE5qa" value="editor-support" />
     <property role="TrG5h" value="ReadonlyWarningProvider" />
     <node concept="2tJIrI" id="8TBVwaDNct" role="jymVt" />
     <node concept="3Tm1VV" id="8TBVwaDLdT" role="1B3o_S" />
     <node concept="3uibUv" id="8TBVwaDMOo" role="EKbjA">
       <ref role="3uigEE" to="pgpb:~EditorWarningsProvider" resolve="EditorWarningsProvider" />
     </node>
+    <node concept="Wx3nA" id="3xGyUPKI3eo" role="jymVt">
+      <property role="TrG5h" value="MESSAGE" />
+      <node concept="17QB3L" id="3xGyUPKI3er" role="1tU5fm" />
+      <node concept="Xl_RD" id="3xGyUPKI3es" role="33vP2m">
+        <property role="Xl_RC" value="The editor is read-only while model checker is running." />
+      </node>
+      <node concept="3Tm6S6" id="3xGyUPKI3eq" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3xGyUPKI2W4" role="jymVt" />
     <node concept="3clFb_" id="8TBVwaDNdq" role="jymVt">
       <property role="TrG5h" value="getWarningPanel" />
       <node concept="3Tm1VV" id="8TBVwaDNdr" role="1B3o_S" />
@@ -8555,8 +8633,8 @@
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="pgpb:~WarningPanel.&lt;init&gt;(jetbrains.mps.ide.editor.warningPanel.EditorWarningsProvider,java.lang.String,java.lang.String,java.lang.Runnable)" resolve="WarningPanel" />
                   <node concept="Xjq3P" id="4AucYKW5_jc" role="37wK5m" />
-                  <node concept="Xl_RD" id="4AucYKW5_jd" role="37wK5m">
-                    <property role="Xl_RC" value="The editor is read-only while model checker is running." />
+                  <node concept="37vLTw" id="3xGyUPKI4lU" role="37wK5m">
+                    <ref role="3cqZAo" node="3xGyUPKI3eo" resolve="MESSAGE" />
                   </node>
                   <node concept="10Nm6u" id="3xGyUPKEJc5" role="37wK5m" />
                   <node concept="10Nm6u" id="3xGyUPKEJVQ" role="37wK5m" />
@@ -8583,98 +8661,9 @@
       </node>
     </node>
   </node>
-  <node concept="2uRRBy" id="eduRrcWsEP">
-    <property role="3GE5qa" value="editor-component-support" />
-    <property role="TrG5h" value="CMSEditorWarningsProviderPlugin" />
-    <node concept="2BZ0e9" id="eduRrcWu9h" role="2uRRBA">
-      <property role="TrG5h" value="readonlyWarningProvider" />
-      <node concept="3Tm6S6" id="eduRrcWu9i" role="1B3o_S" />
-      <node concept="3uibUv" id="eduRrcWusb" role="1tU5fm">
-        <ref role="3uigEE" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
-      </node>
-      <node concept="2ShNRf" id="2L7qGPDfAgE" role="33vP2m">
-        <node concept="HV5vD" id="2L7qGPDg3Yh" role="2ShVmc">
-          <property role="373rjd" value="true" />
-          <ref role="HV5vE" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
-        </node>
-      </node>
-    </node>
-    <node concept="2uRRBT" id="eduRrcWsOO" role="2uRRB$">
-      <node concept="3clFbS" id="eduRrcWsOP" role="2VODD2">
-        <node concept="3cpWs8" id="4AucYKW1cy7" role="3cqZAp">
-          <node concept="3cpWsn" id="4AucYKW1cy8" role="3cpWs9">
-            <property role="TrG5h" value="newDisposable" />
-            <node concept="3uibUv" id="4AucYKW1cvB" role="1tU5fm">
-              <ref role="3uigEE" to="v23q:~Disposable" resolve="Disposable" />
-            </node>
-            <node concept="2YIFZM" id="4AucYKW1cy9" role="33vP2m">
-              <ref role="1Pybhc" to="zn9m:~Disposer" resolve="Disposer" />
-              <ref role="37wK5l" to="zn9m:~Disposer.newDisposable(java.lang.String)" resolve="newDisposable" />
-              <node concept="2OqwBi" id="4AucYKW1cya" role="37wK5m">
-                <node concept="3VsKOn" id="4AucYKW1cyb" role="2Oq$k0">
-                  <ref role="3VsUkX" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
-                </node>
-                <node concept="liA8E" id="4AucYKW1cyc" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2L7qGPDf$3r" role="3cqZAp">
-          <node concept="2OqwBi" id="2L7qGPDf_sR" role="3clFbG">
-            <node concept="2OqwBi" id="2L7qGPDf$g5" role="2Oq$k0">
-              <node concept="10M0yZ" id="2L7qGPDf$6h" role="2Oq$k0">
-                <ref role="3cqZAo" to="pgpb:~EditorWarningsProvider.EP_NAME" resolve="EP_NAME" />
-                <ref role="1PxDUh" to="pgpb:~EditorWarningsProvider" resolve="EditorWarningsProvider" />
-              </node>
-              <node concept="liA8E" id="2L7qGPDf_ns" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionPointName.getPoint()" resolve="getPoint" />
-              </node>
-            </node>
-            <node concept="liA8E" id="2L7qGPDfAaa" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object,com.intellij.openapi.Disposable)" resolve="registerExtension" />
-              <node concept="2OqwBi" id="eduRrcWu_Z" role="37wK5m">
-                <node concept="2WthIp" id="eduRrcWuA2" role="2Oq$k0" />
-                <node concept="2BZ7hE" id="eduRrcWuA4" role="2OqNvi">
-                  <ref role="2WH_rO" node="eduRrcWu9h" resolve="readonlyWarningProvider" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="4AucYKW1d28" role="37wK5m">
-                <ref role="3cqZAo" node="4AucYKW1cy8" resolve="newDisposable" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2uRRBN" id="eduRrcWt$V" role="2uRRB_">
-      <node concept="3clFbS" id="eduRrcWt$W" role="2VODD2">
-        <node concept="3clFbF" id="eduRrcWrdk" role="3cqZAp">
-          <node concept="2OqwBi" id="eduRrcWryu" role="3clFbG">
-            <node concept="2OqwBi" id="eduRrcWrdm" role="2Oq$k0">
-              <node concept="10M0yZ" id="eduRrcWrdn" role="2Oq$k0">
-                <ref role="3cqZAo" to="pgpb:~EditorWarningsProvider.EP_NAME" resolve="EP_NAME" />
-                <ref role="1PxDUh" to="pgpb:~EditorWarningsProvider" resolve="EditorWarningsProvider" />
-              </node>
-              <node concept="liA8E" id="eduRrcWrdo" role="2OqNvi">
-                <ref role="37wK5l" to="9ti4:~ExtensionPointName.getPoint()" resolve="getPoint" />
-              </node>
-            </node>
-            <node concept="liA8E" id="eduRrcWs8g" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.unregisterExtension(java.lang.Class)" resolve="unregisterExtension" />
-              <node concept="3VsKOn" id="eduRrcWyrp" role="37wK5m">
-                <ref role="3VsUkX" node="8TBVwaDLdS" resolve="ReadonlyWarningProvider" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="3xGyUPKHbuD">
-    <property role="3GE5qa" value="editor-component-support" />
-    <property role="TrG5h" value="CMSEditorExtension" />
+    <property role="3GE5qa" value="editor-support" />
+    <property role="TrG5h" value="CheckerEditorExtension" />
     <node concept="2RhdJD" id="3xGyUPKH3Ha" role="jymVt">
       <property role="2RkwnN" value="ideaProject" />
       <node concept="3Tm1VV" id="3xGyUPKH3Hb" role="1B3o_S" />
@@ -8731,37 +8720,21 @@
       <node concept="3clFbS" id="8TBVwa2zno" role="3clF47">
         <node concept="3clFbJ" id="8TBVwa363H" role="3cqZAp">
           <node concept="3clFbS" id="8TBVwa363J" role="3clFbx">
-            <node concept="3clFbJ" id="8TBVwa32Ja" role="3cqZAp">
-              <node concept="3clFbS" id="8TBVwa32Jc" role="3clFbx">
-                <node concept="3clFbF" id="8TBVwa3hyC" role="3cqZAp">
-                  <node concept="2YIFZM" id="8TBVwa3hQE" role="3clFbG">
-                    <ref role="37wK5l" node="3w1r$vxAhbP" resolve="makeWritable" />
-                    <ref role="1Pybhc" node="3w1r$vx_ED6" resolve="EditorComponentReadonlySupport" />
-                    <node concept="1eOMI4" id="8TBVwa3jid" role="37wK5m">
-                      <node concept="10QFUN" id="8TBVwa3jic" role="1eOMHV">
-                        <node concept="37vLTw" id="8TBVwa3jib" role="10QFUP">
-                          <ref role="3cqZAo" node="8TBVwa2znl" resolve="iEditorComponent" />
-                        </node>
-                        <node concept="3uibUv" id="8TBVwa3jia" role="10QFUM">
-                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="3xGyUPKGWWY" role="3cqZAp">
-                  <node concept="2YIFZM" id="3xGyUPKGXjx" role="3clFbG">
-                    <ref role="37wK5l" node="eduRrcWTS7" resolve="updateMPSEditorWarnings" />
-                    <ref role="1Pybhc" node="6Qju3tF7Bf8" resolve="IdeaEditors" />
-                    <node concept="338YkY" id="3xGyUPKH8il" role="37wK5m">
-                      <ref role="338YkT" node="3xGyUPKH3Ha" resolve="ideaProject" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2YIFZM" id="8TBVwa5Es5" role="3clFbw">
+            <node concept="3clFbF" id="3xGyUPKIsuy" role="3cqZAp">
+              <node concept="2YIFZM" id="3xGyUPKIsNx" role="3clFbG">
+                <ref role="37wK5l" node="3xGyUPKIpcl" resolve="makeEditorReadonlyIfRunning" />
                 <ref role="1Pybhc" node="8TBVwa2ZOx" resolve="ConcurrentModelCheckerState" />
-                <ref role="37wK5l" node="8TBVwa5u_W" resolve="isRunning" />
+                <node concept="10QFUN" id="3xGyUPKIsNy" role="37wK5m">
+                  <node concept="37vLTw" id="3xGyUPKIsNz" role="10QFUP">
+                    <ref role="3cqZAo" node="8TBVwa2znl" resolve="iEditorComponent" />
+                  </node>
+                  <node concept="3uibUv" id="3xGyUPKIsN$" role="10QFUM">
+                    <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+                  </node>
+                </node>
+                <node concept="338YkY" id="3xGyUPKItcf" role="37wK5m">
+                  <ref role="338YkT" node="3xGyUPKH3Ha" resolve="ideaProject" />
+                </node>
               </node>
             </node>
           </node>

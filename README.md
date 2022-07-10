@@ -15,9 +15,9 @@ TBC Example
 - It's more difficult to cancel the Concurrent Model Checker as you have to press each cancel button of each background thread instead of a single button.
 - The re-run action of the ModelCheckerViewer is not set so far. (An individual action could probably assigned to "myUsagesView" using Java reflections.) 
 
-##### TODOs
+##### Idea
 
-- 
+- heurisic
 
 ### Usage
 
