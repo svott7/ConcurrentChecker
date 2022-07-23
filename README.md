@@ -3,7 +3,7 @@
 The classic MPS model checker executes checkers and units under test sequentially utilizing a single thread.
 
 This plugin accelerates the checking procedure by running checkers concurrently in multiple background threads and, as a side effect, the UI is not blocked by a modal dialog.
-The Concurrent Checker can reduce the waiting time from about 6,5 minutes to 90 seconds in a customer project and allow users to navigate in editors along the way. 
+The Concurrent Checker can reduce the waiting time from about 6,5 minutes to 93 seconds in a customer project and allow users to navigate in editors along the way. 
 
 ## Usage
 
@@ -52,6 +52,15 @@ Note: There aren't measurement actions for `Check Module` and `Check Project` to
 - It's more difficult to cancel the Concurrent Checker as you have to cancel every model checker background task separately.
 - The re-run action of the ModelCheckerViewer is not set so far (an individual action could probably assigned to "myUsagesView" field using Java reflections).
 - Larger projects usually contain many models so that hundreds of background tasks are created most likely adding some overhead. However, some checker are usually very fast so there is not need to create one task for each model for those. This could be improved by providing an heuristic checker option.
+
+#### Common action freezing the MPS UI
+
+The following common navigation actions let the UI freeze during checker execution (the actions presumably require write access):
+- `Copy` `Ctrl+C`
+- `Go to Declaration or Usages` `Ctrl+B` `Strg+Click`
+- `Switch multi editor tabs`
+
+If you would like to open a certain editor, prefer using logical view instead of go to actions. Perhaps it is possible to deactivate user statistics if this is the issue of `Go to Declaration or Usages` `Switch multi editor tabs`
 
 ### Editor locking
 
