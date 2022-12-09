@@ -10,9 +10,18 @@
   </imports>
   <registry>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
+      <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
+        <property id="6666499814681541920" name="text" index="2pMdty" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
+        <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
+        <child id="6666499814681415861" name="attributes" index="2pNNFR" />
         <child id="1622293396948928802" name="content" index="3o6s8t" />
+      </concept>
+      <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
+        <property id="6666499814681447926" name="attrName" index="2pNUuO" />
+        <child id="6666499814681541918" name="value" index="2pMdts" />
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG">
         <property id="1622293396948953704" name="value" index="3o6i5n" />
@@ -73,21 +82,27 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
-      <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
-        <reference id="6592112598314586626" name="group" index="m$f5T" />
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="1359186315025500371" name="xml" index="20twgj" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
+      </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -131,7 +146,7 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="2sgV4H" id="7DP0GxftJhO" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="7DP0GxftJhP" role="2JcizS">
         <ref role="398BVh" node="7DP0GxftJhN" resolve="mps_home" />
       </node>
@@ -157,33 +172,43 @@
         </node>
       </node>
       <node concept="3_J27D" id="7DP0GxftJi0" role="m$_w8">
-        <node concept="3Mxwew" id="7DP0GxftPzj" role="3MwsjC">
-          <property role="3MwjfP" value="0.04" />
+        <node concept="3Mxwew" id="4yHCkwUWZxx" role="3MwsjC">
+          <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$f5U" id="7DP0GxftJi2" role="m$_yh">
-        <ref role="m$f5T" node="7DP0GxftJhW" resolve="ConcurrentChecker" />
-      </node>
-      <node concept="m$_yC" id="7DP0GxftJi3" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+      <node concept="m$_yB" id="57n92Gmk2DM" role="m$_yh">
+        <ref role="m$_yA" node="7DP0GxftJhV" resolve="mps.tweaks.concurrentchecker" />
       </node>
       <node concept="m$_yC" id="7DP0GxftMUb" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5lGJ4TajoV9" resolve="jetbrains.mps.ide.migration.workbench" />
       </node>
-      <node concept="m$_yC" id="26PAZwsZoDc" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
-      </node>
-      <node concept="m$_yC" id="7DP0GxftMTK" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5lGJ4Taqfsl" resolve="jetbrains.mps.ide.modelchecker" />
-      </node>
       <node concept="3_J27D" id="7DP0GxftJi4" role="m_cZH">
         <node concept="3Mxwew" id="7DP0GxftJi5" role="3MwsjC">
-          <property role="3MwjfP" value="ConcurrentChecker" />
+          <property role="3MwjfP" value="mps.tweas.concurrentchecker" />
         </node>
       </node>
-      <node concept="2pNNFK" id="7DP0GxftJi6" role="20twgj">
+      <node concept="3_J27D" id="48XBA_loGn$" role="3s6cr7">
+        <node concept="3Mxwew" id="48XBA_loGnC" role="3MwsjC">
+          <property role="3MwjfP" value="Plugin to check MPS project, modules and models concurrently" />
+        </node>
+      </node>
+      <node concept="2iUeEo" id="7i7MvfeHpNU" role="2iVFfd">
+        <property role="2iUeEu" value="https://github.com/svott7" />
+        <property role="2iUeEt" value="Sven Ott" />
+      </node>
+      <node concept="2pNNFK" id="5OwE8TPVNdA" role="20twgj">
+        <property role="2pNNFO" value="idea-version" />
+        <property role="qg3DV" value="true" />
+        <node concept="2pNUuL" id="5OwE8TPVNdF" role="2pNNFR">
+          <property role="2pNUuO" value="since-build" />
+          <node concept="2pMdtt" id="5OwE8TPVNdG" role="2pMdts">
+            <property role="2pMdty" value="211.0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2pNNFK" id="5OwE8TPVNee" role="20twgj">
         <property role="2pNNFO" value="depends" />
-        <node concept="3o6iSG" id="7DP0GxftJi7" role="3o6s8t">
+        <node concept="3o6iSG" id="5OwE8TPVNef" role="3o6s8t">
           <property role="3o6i5n" value="com.intellij.modules.platform" />
         </node>
       </node>
